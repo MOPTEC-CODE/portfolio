@@ -22,12 +22,31 @@ window.addEventListener('DOMContentLoaded', function () {
             cardArray[i].firstElementChild.style.opacity = cardFadeOpacity;
         };
     }
-    // Ran mobileScrollRevealer() when the width of the window was suitable to be used for mobile
+
+    // Adds 100ms delay to allow click transition to play on mobile devices. The effect is not worth keeping it.
+    function delayLink() {
+        var links = document.querySelectorAll('.delayed-link');
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                var href = link.href;
+
+                setTimeout(function () {
+                    window.location.href = href;
+                }, 100);
+            });
+        });
+    }
+    // Runs when the width of the window was suitable to be used for mobile. There is probably a better way to do this.
     if (window.innerWidth <= 1000)
     {
         this.addEventListener("scroll", function()
         {
             mobileScrollRevealer();
+            delayLink();
         });
     }
+
 });

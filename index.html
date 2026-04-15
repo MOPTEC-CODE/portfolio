@@ -2,168 +2,105 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="icon" type="image/png" href="./image/favicon/favicon.png">
-    <title>NIKU WEB DEVELOPER - Home</title>
-    <meta name="description" content="NIKU WEB DEVELOPER Web Portfolio / Game Portfolio / MOPTEC">
-    <meta name="author" content="NIKU WEB DEVELOPER">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="image/favicon.png">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <link rel="icon" type="image/png" href="image/meat-monochrome-favicon.ico">
+    <title>MOPTEC - HOME</title>
+    <meta name="description" content="MOPTEC | Web Developer | Game Developer">
+    <meta name="author" content="MOPSPEAR">
 </head>
 
-<body>
-    <div class="vignette" aria-hidden="true"></div>
-    <main id="main-grid" class="flex-v">
-        <div id="top-group" class="flex-h">
-            <div id="logo-group" class="flex-h">
-                <img id="logo-image" src="image/logo.png">
-                <div id="logo-text" class="flex-v">
-                    <div>niku</div>
-                    <div>web</div>
-                    <div>developer</div>
-                </div>
-            </div>
-            <div id="art-info-group" class="flex-v">
-                <section id="about">
-                    <div class="heading-group flex-h">
-                        <h2>about</h2>
-                        <div class="line-h"></div>
-                    </div>
-                    <p>My work is split in two: professional web development and independent game development. The idea
-                        behind both is a strong belief that technology should respect its user. Too many modern websites
-                        and games are frustrating to use, whether due to oversight or design flaws. For my web projects,
-                        I create straightforward websites. In game development, I use retro aesthetics and solid
-                        mechanics. I use foundations of games of the past as a place to start experimenting. You will
-                        find professional and proof of concept web projects here as well as my games. I am looking for a
-                        full-time position or freelance clients in web development.</p>
-                </section>
-                <section id="contact">
-                    <div class="heading-group flex-h">
-                        <h2>contact</h2>
-                        <div class="line-h"></div>
-                    </div>
-                    <p><a href="mailto:nikuwebdeveloper@gmail.com">nikuwebdeveloper@gmail.com</a></p>
-                </section>
-                <section id="info" class="flex-v">
-                    <div class="heading-group flex-h">
-                        <h2>info</h2>
-                        <div class="line-h"></div>
-                    </div>
-                    <div class="flex-group flex-h">
-                        <a class="grid-item" href="https://linkedin.com/in/nikuwebdevelopermoptec" target="_blank" rel="noopener noreferrer">
-                            <div class="grid-item-card">
-                                <!-- <img alt="Pixelated cover image" class="grid-item-cover"
-                                    src="image/tile/linkedin-thumb-cover.jpg"> -->
-                                <img alt="LinkedIn card" class="grid-item-image" src="image/tile/linkedin-thumb.jpg">
-                            </div>
-                            <h3 class="grid-item-title">LinkedIn</h3>
-                        </a>
-                        <a class="grid-item" href="https://github.com/nikuwebdeveloper" target="_blank" rel="noopener noreferrer">
-                            <div class="grid-item-card">
-                                <!-- <img alt="Pixelated cover image" class="grid-item-cover"
-                                    src="image/tile/github-thumb-cover.jpg"> -->
-                                <img alt="Github card" class="grid-item-image" src="image/tile/github-thumb.jpg">
-                            </div>
-                            <h3 class="grid-item-title">GitHub</h3>
-                        </a>
-                        <a class="grid-item" href="https://www.youtube.com/@moptec" target="_blank" rel="noopener noreferrer">
-                            <div class="grid-item-card">
-                                <!-- <img alt="Pixelated cover image" class="grid-item-cover"
-                                    src="image/tile/youtube-thumb-cover.png"> -->
-                                <img alt="YouTube card" class="grid-item-image" src="image/tile/youtube-thumb.png">
-                            </div>
-                            <h3 class="grid-item-title">YouTube</h3>
-                        </a>
-                    </div>
-                </section>
-            </div>
+<body class="flex-row">
+    <header class="header box flex-col">
+        <div class="logo wrapper flex-col">
+            <img src="./image/logo.png">
         </div>
-        <div id="projects-group" class="flex-h">
-            <section id="web-projects" class="flex-v">
-                <div class="heading-group flex-h">
-                    <h2>web projects</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="grid-group">
-                    <a class="grid-item" href="https://poolercatholics.com/" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <!-- <img alt="Pixelated cover image" class="grid-item-cover"
-                                src="image/tile/corpus-christi-catholic-church-thumb-cover.jpg"> -->
-                            <img alt="Corpus Christi Catholic Church card" class="grid-item-image"
-                                src="image/tile/corpus-christi-catholic-church-thumb.jpg">
-                        </div>
-                        <h3 class="grid-item-title">Corpus Christi Catholic Church</h3>
-                    </a>
-                    <a class="grid-item" href="https://www.carmelofsavannah.org/" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <img alt="Our Lady of Confidence Carmelite Monastery card" class="grid-item-image"
-                                src="image/tile/our-lady-of-confidence-carmelite-monastery-thumb.jpg">
-                        </div>
-                        <h3 class="grid-item-title">Our Lady of Confidence Carmelite Monastery</h3>
-                    </a>
-                    <a class="grid-item" href="https://www.ololpw.com" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <img alt="Our Lady of Lourdes Catholic Church card" class="grid-item-image"
-                                src="image/tile/our-lady-of-lourdes-catholic-church-thumb.jpg">
-                        </div>
-                        <h3 class="grid-item-title">Our Lady of Lourdes Catholic Church</h3>
-                    </a>
-                </div>
-            </section>
-            <section id="game-projects" class="flex-v">
-                <div class="heading-group flex-h">
-                    <h2 id="moptec-reveal">game projects</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="grid-group">
-                    <a class="grid-item" href="https://youtu.be/UVCglNccUJo?si=dURvgelU0J3wNK-K" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <img alt="Revenge of the PETSCII Robots card" class="grid-item-image"
-                                src="image/tile/revenge_thumb.png">
-                        </div>
-                        <h3 class="grid-item-title">Revenge of the PETSCII Robots</h3>
-                    </a>
-                    <a class="grid-item" href="https://youtu.be/3MgTPRJXxus?si=4hs3QP_al5rDGxjV" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <img alt="Momo's Starlight card" class="grid-item-image" src="image/tile/momo-thumb.png">
-                        </div>
-                        <h3 class="grid-item-title">Momo's Starlight</h3>
-                    </a>
-                    <a class="grid-item" href="https://www.youtube.com/watch?v=-MrL3zzcqpw" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card">
-                            <img alt="BOW VOID STERN card" class="grid-item-image"
-                                src="image/tile/bow-void-stern-thumb.png">
-                        </div>
-                        <h3 class="grid-item-title">BOW > VOID > STERN</h3>
-                    </a>
-                </div>
-            </section>
-            <section id="certifications" class="flex-v">
-                <div class="heading-group flex-h">
-                    <h2>certifications</h2>
-                    <div class="line-h"></div>
-                </div>
-                <div class="grid-group">
-                    <a class="grid-item" href="https://www.freecodecamp.org/certification/nikuwebdeveloper/responsive-web-design" target="_blank" rel="noopener noreferrer">
-                        <div class="grid-item-card"> 
-                            <img alt="Free Code Camp Certification card" class="grid-item-image"
-                                src="image/tile/free-code-camp-thumb.jpg">
-                        </div>
-                        <h3 class="grid-item-title">freeCodeCamp<br>Responsive Web Design</h3>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <p id="copyright">©&nbsp;Copyright NIKU&nbsp;WEB&nbsp;DEVELOPER 2025</p>
+        <nav class="site-nav flex-col">
+            <a href="./index.html" class="custom-button">HOME</a>
+            <a href="./about.html" class="custom-button">ABOUT</a>
+            <a href="./contact.html" class="custom-button">CONTACT</a>
+            <a class="custom-button disabled">DEV</a>
+            <a class="custom-button disabled">ART</a>
+        </nav>
+    </header>
+    <footer class="footer">
+        <p>© MOPTEC 2026</p>
     </footer>
+    <main class="main flex-col">
+        <h1>PORTFOLIO</h1>
+        <section class="box portfolio">
+            <h2>
+                Web Projects
+            </h2>
+            <div class="cards grid">
+                <a href="https://www.poolercatholics.com" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/corpus-christi-catholic-church-thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>CORPUS CHRISTI</p>
+                        <p class="subtitle">CATHOLIC CHURCH</p>
+                    </div>
+                </a>
+                <a href="https://www.ololpw.com" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/our-lady-of-lourdes-catholic-church-thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>OUR LADY OF LOURDES</p>
+                        <p class="subtitle">CATHOLIC CHURCH</p>
+                    </div>
+                </a>
+                <a href="https://www.carmelofsavannah.org" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/our-lady-of-confidence-carmelite-monastery-thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>OUR LADY OF CONFIDENCE</p>
+                        <p class="subtitle">CARMELITE MONASTERY</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="box portfolio">
+            <h2>
+                Game Projects
+            </h2>
+            <div class="cards grid">
+                <a href="https://www.youtube.com/watch?v=UVCglNccUJo" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/revenge_thumb.png">
+                    </div>
+                    <div class="description flex-col">
+                        <p>Revenge of the</p>
+                        <p class="subtitle">PETSCII Robots</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=3MgTPRJXxus" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/momo-thumb.png">
+                    </div>
+                    <div class="description flex-col">
+                        <p>Momo's Starlight</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=-MrL3zzcqpw" target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/bow-void-stern-thumb.png">
+                    </div>
+                    <div class="description flex-col">
+                        <p>BOW > VOID > STERN</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 
 </html>

@@ -36,6 +36,16 @@ const developerData = {
         born: 1970,
         nationality: "Japanese"
     },
+    "Koichi Ishii":
+    {
+        born: 1964,
+        nationality: "Japanese"
+    },
+    "Nobuaki Komoto":
+    {
+        born: 1973,
+        nationality: "Japanese"
+    },
 }
 
 const gameData = {
@@ -53,7 +63,7 @@ const gameData = {
         developers: [
             // developerData["Yoshinori Kitase"],
         ],
-        year: 19
+        year: 1988
     },
     "Final Fantasy III":
     {
@@ -61,7 +71,7 @@ const gameData = {
         developers: [
             // developerData["Yoshinori Kitase"],
         ],
-        year: 19
+        year: 1990
     },
     "Final Fantasy IV":
     {
@@ -69,15 +79,15 @@ const gameData = {
         developers: [
             // developerData["Yoshinori Kitase"],
         ],
-        year: 19
+        year: 1991
     },
     "Final Fantasy V":
     {
         name: "Final Fantasy V",
         developers: [
-            // developerData["Yoshinori Kitase"],
+            developerData["Yoshinori Kitase"],
         ],
-        year: 19
+        year: 1992
     },
     "Final Fantasy VI":
     {
@@ -110,27 +120,105 @@ const gameData = {
     {
         name: "Final Fantasy IX",
         developers: [
-            // developerData["Yoshinori Kitase"],
+            developerData["Yoshinori Kitase"],
         ],
-        year: 19
+        year: 2000
     },
     "Final Fantasy X":
     {
         name: "Final Fantasy X",
         developers: [
-            // developerData["Yoshinori Kitase"],
+            developerData["Yoshinori Kitase"],
+            developerData["Tetsuya Nomura"],
         ],
-        year: 19
+        year: 2001
     },
+    "Final Fantasy XI":
+    {
+        name: "Final Fantasy XI",
+        developers: []
+    },
+    "Final Fantasy XII": {
+        name: "Final Fantasy XII",
+        developers: [],
+        year: 2006
+    },
+    "Final Fantasy XIII": {
+        name: "final Fantasy XIII",
+        developers: [
+            developerData["Yoshinori Kitase"]
+        ],
+        year: 2009
+    },
+    "Final Fantasy XIV": {
+        name: "final Fantasy XIV",
+        developers: [
+            developerData["Naoki Yoshida"],
+            developerData["Nobuaki Komoto"],
+        ],
+        year: 2010
+    },
+    "Final Fantasy XV": {
+        name: "Final Fantasy XV",
+        developers: [
+            developerData["Yoshinori Kitase"],
+        ],
+        year: 2016
+    },
+    "Final Fantasy XVI": {
+        name: "Final Fantasy XVI",
+        developers: [
+            developerData["Naoki Yoshida"],
+        ],
+        year: 2023
+    },
+    "Final Fantasy VII Remake": {
+        name: "Final Fantasy VII Remake",
+        developers: [
+            developerData["Yoshinori Kitase"],
+        ],
+        year: 2020
+    },
+    "Final Fantasy VII Rebirth": {
+        name: "Final Fantasy VII Rebirth",
+        developers: [
+            developerData["Yoshinori Kitase"],
+        ],
+        year: 2024
+    },
+    "Final Fantasy Tactics": {
+        name: "Final Fantasy Tactics",
+        developers: [],
+        year: 1997
+    }
 }
 
 const companyData = {
     "Square Enix": {
         name: "Square Enix",
-        games: [
+        alternateName: "Square",
+        founded: 1986,
+        headquarters: "Tokyo, Japan",
+        gamesDeveloped: [
+            gameData["Final Fantasy I"],
+            gameData["Final Fantasy II"],
+            gameData["Final Fantasy III"],
+            gameData["Final Fantasy IV"],
+            gameData["Final Fantasy V"],
             gameData["Final Fantasy VI"],
             gameData["Final Fantasy VII"],
             gameData["Final Fantasy VIII"],
+            gameData["Final Fantasy IX"],
+            gameData["Final Fantasy X"],
+            gameData["Final Fantasy XI"],
+            gameData["Final Fantasy XII"],
+            gameData["Final Fantasy XIII"],
+            gameData["Final Fantasy XIV"],
+            gameData["Final Fantasy XV"],
+            gameData["Final Fantasy XVI"],
+            gameData["Final Fantasy VII Remake"],
+            gameData["Final Fantasy VII Rebirth"],
+            gameData["Final Fantasy Tactics"],
         ]
     },
 };

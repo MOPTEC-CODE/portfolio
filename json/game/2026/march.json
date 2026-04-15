@@ -1,0 +1,185 @@
+{
+    "year": "2026",
+    "month": "March",
+    "heading": "Development Summary",
+    "projects_included": [
+        "Revenge of the PETSCII Robots"
+    ],
+    "projects": [
+        {
+            "heading": "Revenge of the PETSCII Robots",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": [
+                        "On the last day of the month, combat finally came back together and felt like something substantial. The game had been in pieces for a long time because of massive code re-writes and it feels much more solid now. A chunk of time was wasted this month trying to rewrite or create pathfinding behavior. I solved the issue by making small changes to the provided pathfinding functions. I remembered \"don't reinvent the wheel\" and then I stopped, and now it's good enough. Also, I tried using Ubuntu's version of GameMaker on Kubuntu but I don't trust that version at all. I know that \"enstruct\" is not a real word, but I'm going to start using it.",
+                        "enstruct (v) - reorganizing code into a struct"
+                    ]
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": [
+                        {
+                            "path": "./image/log/2026/03/00.png",
+                            "label": "Here is some test text 0."
+                        },
+                        {
+                            "path": "./image/log/2026/03/01.png",
+                            "label": "Here is some test text 1."
+                        },
+                        {
+                            "path": "./image/log/2026/03/02.png",
+                            "label": "Here is some test text 2."
+                        },
+                        {
+                            "path": "./image/log/2026/03/03.png",
+                            "label": "Here is some test text 3."
+                        }                        
+                    ]
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "Weapons",
+                                    "changes": [
+                                        "flamethrower",
+                                        "rocket launcher"
+                                    ]
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "Tiles",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": [
+                                        "added walls"
+                                    ]
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

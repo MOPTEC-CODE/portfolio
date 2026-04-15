@@ -1,0 +1,126 @@
+@media (max-width: 1600px) {
+    h1 {
+     
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: clamp(0.4rem, 8vw, 2rem);
+    }
+
+    h2 {
+        font-size: clamp(0.4rem, 5vw, 1.5rem);
+    }
+
+    h3 {
+        font-size: clamp(0.4rem, 3vw, 1.3rem);
+    }
+
+    a,
+    p,
+    email {
+        font-size: clamp(0.4rem, 3vw, 1.1rem);
+    }
+
+    .header {
+        z-index: 999;
+    }
+
+    .cards.grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards .description p {
+        font-size: clamp(0.4rem, 4vw, 2.5rem);
+    }
+
+    .card .description .subtitle {
+        font-size: clamp(0.4rem, 3vw, 2rem);
+    }
+
+    .header,
+    .site-nav {
+        flex-direction: row;
+        height: 5rem;
+        margin: 0;
+        flex-grow: 1;
+        background-color: white;
+    }
+
+    .site-nav a {
+        padding: 0;
+        flex: 1;
+        font-weight: 400;
+        text-align: center;
+        font-size: clamp(0.4rem, 3vw, 1.2rem);
+    }
+
+    .logo {
+        width: 6rem;
+        height: 100%;
+        margin: auto 0;
+        padding: .5rem;
+    }
+
+    .main {
+        margin-top: 5rem;
+        /* margin-left 0; */
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header.box {
+        padding: 0;
+    }
+
+    .footer {
+        width: 100%;
+        /* background: white; */
+    }
+
+    .main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .site-nav a:hover 
+    {
+        background: white;
+        color: black;
+        box-shadow: 0px 0px 0px white;
+        text-shadow: 0px 0px 0px white;
+
+}
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    h1 {
+
+    }
+
+    .cards.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards .description p {
+        font-size: clamp(0.4rem, 5vw, 0.8rem);
+    }
+
+    .card .description .subtitle {
+        font-size: clamp(0.4rem, 4vw, 0.75rem);
+    }
+
+    a,
+    p,
+    email {
+        font-size: clamp(0.4rem, 3vw, 1rem);
+    }
+}
