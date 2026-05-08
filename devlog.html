@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <!-- JS -->
+    <script src="./script/render_dev_log.js" defer></script>
+
+    <link rel="icon" type="image/png" href="image/meat-monochrome-favicon.ico">
+    <title>MOPTEC - DEVELOPER LOG</title>
+    <meta name="description" content="MOPTEC | Web Developer | Game Developer">
+    <meta name="author" content="MOPSPEAR">
+</head>
+
+<body class="flex-row">
+    <header class="header box flex-col">
+        <div class="logo wrapper flex-col">
+            <img src="./image/logo.png">
+        </div>
+        <nav class="site-nav flex-col">
+            <a href="./index.html" class="custom-button">HOME</a>
+            <a href="./about.html" class="custom-button">ABOUT</a>
+            <a href="./contact.html" class="custom-button">CONTACT</a>
+            <a href="./devlog.html" class="custom-button">DEVLOG</a>
+            <a class="custom-button disabled">ART</a>
+        </nav>
+    </header>
+    <main class="main flex-col">
+        <div class="log flex-row">
+            <section class="log-output">
+                <h1 class="title">DEVLOG</h1>
+                <div class="controls flex-col box">
+                    <h2 class="title">CHOOSE A PROJECT</h2>
+                    <div class="categories grid">
+                        <button data-button-category="selector" id="type" data-category="type" class="custom-button category">TYPE</button>
+                        <button data-button-category="selector" id="year" data-category="year" class="custom-button category">YEAR</button>
+                        <button data-button-category="selector" id="month" data-category="month" class="custom-button category">MONTH</button>
+                    </div>
+                    <div class="dropdown flex-row">
+                        <!-- PROJECT TYPE LIST -->
+                        <div id="dropdownMenuType" class="type dropdown-menu box grid display-none left">
+                            <button class="custom-button sub-button type" data-button-category="type" data-type="game">GAME</button>
+                            <button class="custom-button sub-button type disabled" data-button-category="type" data-type="web">WEB</button>
+                        </div>
+
+                        <!-- YEAR LIST -->
+                        <div id="dropdownMenuYear" class="dropdown-menu box grid display-none middle">
+                            <button class="custom-button sub-button year" data-button-category="year" data-year="2026">2026</button>
+                            <button class="custom-button sub-button year disabled" data-button-category="year" data-year="2025">2025</button>
+                            <button class="custom-button sub-button year disabled" data-button-category="year" data-year="2024">2024</button>
+                        </div>
+
+                        <!-- MONTH LIST -->
+                        <div id="dropdownMenuMonth" class="dropdown-menu box grid display-none right">
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="01">January</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="02">February</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="03">March</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="04">April</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="05">May</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="06">June</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="07">July</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="08">August</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="09">September</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="10">October</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="11">November</button>
+                            <button class="custom-button sub-button month" data-button-category="month" data-month="12">December</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <section id="logOutput" class="projects flex-col">
+                    <h2 class="title muted">
+                        <span class="random-slash" data-count="22"></span>
+                    </h2>
+                    <div class="box projects-included">
+                        <h2 class="random-slash" data-count="15"></h2>
+                        <ul>
+                            <li class="random-slash" data-count="17"></li>
+                        </ul>
+                    </div>
+                    <section class="project box flex-col">
+                        <h2 class="title random-slash" data-count="35"></h2>
+                        <section class="flex-col">
+                            <h3 class="random-slash hori-line" data-count="10"></h3>
+                            <div class="random-slash" data-count="1000"></div>
+                        </section>
+                        <section class="changes flex-col">
+                            <h3 class="random-slash hori-line" data-count="8"></h3>
+                            <h4 class="random-slash" data-count="12"></h4>
+                            <section class="sub-category flex-col">
+                                <h5 class="random-slash" data-count="12"></h5>
+                                <p class="muted">SLOW DOWN! YOU HAVE SCROLLED TOO FAR. GO BACK UP. ▲ ▲ ▲ </p>
+                                <ul>
+                                    <li class="random-slash" data-count="20"></li>
+                                    <li class="random-slash" data-count="15"></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

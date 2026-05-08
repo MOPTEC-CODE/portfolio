@@ -1,0 +1,170 @@
+{
+    "year": "2026",
+    "month": "April",
+    "heading": "Development Summary",
+    "projects_included": [
+        "Revenge of the PETSCII Robots"
+    ],
+    "projects": [
+        {
+            "heading": "Revenge of the PETSCII Robots",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": [
+                        "Most of my extra time this month was devoted to rebuilding this portfolio site from scratch and developing this log output system. I wish I had been able to spend more time developing this game but I have to balance my priorities. It always concerns me that I think others think that the game hasn't had any progress, so I made these logs. I hope they will help me find a job too. This system is also useful for web development progress tracking.",
+                        "A lot of this month's time was wasted trying to improve the looping circuit behavior of Rollerbots which I ended up undoing when I realized it was more work than it was worth, plus the problem it intended to solve was not really a problem. Initially, I assumed it would involve a lot of interaction with setting spawn variables with the map editor, but in reality it's not bad at all. Finally, I updated GameMaker and had to fix the installation (it was Linux-related issues + the very-Beta version of GameMaker)."
+                    ]
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": [
+                                        "Fixed issue with weapon impact effects displaying in the wrong direction."
+                                    ]
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "Weapons",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": [
+                                        "Improved code for moving from node to node in a circuit, but abandonded it after it not being that useful.",
+                                        "Fixed numerous issues coming from earlier code changes.",
+                                        "Greatly improved vision function for finding possible targets to shoot.",
+                                        "Enfunctioned node to node movement code."
+                                    ]
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "Tiles",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

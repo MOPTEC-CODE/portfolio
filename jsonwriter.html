@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Log Editor</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&display=swap');
+
+  :root {
+    --bg:       #0d0f14;
+    --surface:  #141720;
+    --panel:    #1b1f2e;
+    --border:   #2a2f45;
+    --accent:   #4fffb0;
+    --accent2:  #ff4f8b;
+    --text:     #c8d0e0;
+    --muted:    #5a6080;
+    --heading:  #ffffff;
+    --mono:     'Share Tech Mono', monospace;
+    --sans:     'Barlow', sans-serif;
+    --radius:   4px;
+    --gap:      1.2rem;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  header h1 {
+    font-family: var(--mono);
+    font-size: 1rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  header h1 span { color: var(--muted); }
+
+  .header-actions { display: flex; gap: .6rem; }
+
+  /* ── BUTTONS ── */
+  button {
+    font-family: var(--mono);
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--panel);
+    color: var(--text);
+    padding: .45rem 1rem;
+    cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button.primary {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+    font-weight: 700;
+  }
+  button.primary:hover { background: #00e090; border-color: #00e090; }
+  button.danger { border-color: var(--accent2); color: var(--accent2); }
+  button.danger:hover { background: var(--accent2); color: #fff; }
+
+  /* ── LAYOUT ── */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    overflow: hidden;
+    height: calc(100vh - 58px - 48px);
+  }
+
+  /* ── LEFT PANE (form) ── */
+  #form-pane {
+    overflow-y: auto;
+    padding: 1.5rem 2rem;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  /* ── RIGHT PANE (JSON) ── */
+  #json-pane {
+    overflow-y: auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+  #json-pane h2 {
+    font-family: var(--mono);
+    font-size: .8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #json-output {
+    font-family: var(--mono);
+    font-size: .72rem;
+    line-height: 1.7;
+    white-space: pre;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    flex: 1;
+    overflow: auto;
+    color: var(--text);
+    tab-size: 2;
+  }
+
+  /* ── SECTION CARDS ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .card-header {
+    background: var(--panel);
+    padding: .55rem 1rem;
+    font-family: var(--mono);
+    font-size: .72rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-header .card-label { color: var(--muted); font-size: .65rem; }
+  .card-body { padding: 1rem; display: flex; flex-direction: column; gap: .8rem; }
+
+  /* ── FORM FIELDS ── */
+  label {
+    display: block;
+    font-size: .72rem;
+    font-family: var(--mono);
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: .3rem;
+  }
+  input[type="text"], input[type="number"], textarea, select {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: .88rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    padding: .5rem .75rem;
+    outline: none;
+    transition: border-color .15s;
+    resize: vertical;
+  }
+  input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+  textarea { min-height: 80px; }
+
+  /* ── FIELD ROW ── */
+  .field-row { display: grid; gap: .8rem; }
+  .field-row.cols-2 { grid-template-columns: 1fr 1fr; }
+  .field-row.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+  /* ── CHANGES LIST ── */
+  .changes-list { display: flex; flex-direction: column; gap: .4rem; }
+  .change-item {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+  }
+  .change-item input { flex: 1; }
+  .change-item button { padding: .4rem .6rem; font-size: .9rem; flex-shrink: 0; }
+
+  /* ── IMAGES LIST ── */
+  .image-entry {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+  }
+  .image-entry .remove-btn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+  }
+
+  /* ── SUBSECTION BLOCK ── */
+  .subsection {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .subsection-header {
+    background: var(--panel);
+    padding: .4rem .75rem;
+    font-family: var(--mono);
+    font-size: .7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    border-bottom: 1px solid var(--border);
+  }
+  .subsection-body { padding: .75rem; display: flex; flex-direction: column; gap: .5rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: .6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: .68rem;
+    color: var(--muted);
+    height: 48px;
+  }
+  #status { transition: color .3s; }
+  #status.ok { color: var(--accent); }
+  #status.err { color: var(--accent2); }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+  /* JSON syntax highlighting */
+  .j-key   { color: #7eb8f7; }
+  .j-str   { color: #98d980; }
+  .j-num   { color: #f5a623; }
+  .j-bool  { color: #ff7eb3; }
+  .j-null  { color: var(--muted); }
+  .j-punct { color: var(--muted); }
+
+  @media (max-width: 900px) {
+    main { grid-template-columns: 1fr; grid-template-rows: auto auto; height: auto; }
+    #form-pane { border-right: none; border-bottom: 1px solid var(--border); }
+    #json-pane { height: 50vh; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dev Log <span>//</span> JSON Editor</h1>
+  <div class="header-actions">
+    <button onclick="loadExample()">Load Example</button>
+    <button onclick="clearAll()">Clear</button>
+    <button class="primary" onclick="downloadJSON()">⬇ Download JSON</button>
+  </div>
+</header>
+
+<main>
+  <!-- ══ LEFT: FORM ══ -->
+  <div id="form-pane">
+
+    <!-- Meta -->
+    <div class="card">
+      <div class="card-header">Meta <span class="card-label">Top-level fields</span></div>
+      <div class="card-body">
+        <div class="field-row cols-3">
+          <div>
+            <label>Year</label>
+            <input type="text" id="f-year" placeholder="2026" oninput="render()">
+          </div>
+          <div>
+            <label>Month</label>
+            <input type="text" id="f-month" placeholder="March" oninput="render()">
+          </div>
+          <div>
+            <label>Heading</label>
+            <input type="text" id="f-heading" placeholder="Development Summary" oninput="render()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project -->
+    <div class="card">
+      <div class="card-header">Project <span class="card-label">projects[0]</span></div>
+      <div class="card-body">
+        <div>
+          <label>Project Name / Heading</label>
+          <input type="text" id="f-proj-heading" placeholder="Revenge of the PETSCII Robots" oninput="render()">
+        </div>
+      </div>
+    </div>
+
+    <!-- Commentary -->
+    <div class="card">
+      <div class="card-header">Commentary <span class="card-label">sections[commentary]</span></div>
+      <div class="card-body">
+        <div>
+          <label>Paragraph 1 — Main commentary text</label>
+          <textarea id="f-comment-0" placeholder="Main commentary paragraph…" oninput="render()"></textarea>
+        </div>
+        <div>
+          <label>Paragraph 2 — e.g. definitions, asides (leave blank to omit)</label>
+          <textarea id="f-comment-1" placeholder="enstruct (v) - reorganizing code into a struct" oninput="render()" style="min-height:48px;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Images -->
+    <div class="card">
+      <div class="card-header">Images <span class="card-label">sections[images]</span></div>
+      <div class="card-body" id="images-container">
+        <!-- dynamic -->
+      </div>
+      <div style="padding:.5rem 1rem; border-top:1px solid var(--border);">
+        <button onclick="addImage()">+ Add Image Entry</button>
+      </div>
+    </div>
+
+    <!-- Changes — Game Logic -->
+    <div class="card">
+      <div class="card-header">Changes › Game Logic <span class="card-label">sections[changes]</span></div>
+      <div class="card-body" id="gl-container">
+        <!-- subsections rendered by JS -->
+      </div>
+    </div>
+
+    <!-- Changes — Graphics -->
+    <div class="card">
+      <div class="card-header">Changes › Graphics</div>
+      <div class="card-body" id="gr-container"></div>
+    </div>
+
+    <!-- Changes — Player -->
+    <div class="card">
+      <div class="card-header">Changes › Player</div>
+      <div class="card-body" id="pl-container"></div>
+    </div>
+
+    <!-- Changes — Enemies -->
+    <div class="card">
+      <div class="card-header">Changes › Enemies</div>
+      <div class="card-body" id="en-container"></div>
+    </div>
+
+    <!-- Changes — Environment -->
+    <div class="card">
+      <div class="card-header">Changes › Environment</div>
+      <div class="card-body" id="ev-container"></div>
+    </div>
+
+  </div><!-- /form-pane -->
+
+  <!-- ══ RIGHT: JSON PREVIEW ══ -->
+  <div id="json-pane">
+    <h2>
+      JSON Preview
+      <button onclick="copyJSON()">⎘ Copy JSON</button>
+    </h2>
+    <pre id="json-output"></pre>
+  </div>
+</main>
+
+<footer>
+  <span>Dev Log Editor — all data stays local</span>
+  <span id="status">ready</span>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════════════
+//  SCHEMA — defines change sub-sections per top section
+// ══════════════════════════════════════════════════════
+const CHANGE_SCHEMA = {
+  'gl': { label: 'Game Logic', subs: ['Input','Text','Graphics','UI'] },
+  'gr': { label: 'Graphics',   subs: ['Color Palette','Resolution','Frame Rate','Player','Enemy','Environment'] },
+  'pl': { label: 'Player',     subs: ['Weapons','Items','Interactions','Movement'] },
+  'en': { label: 'Enemies',    subs: ['Hoverbot','Rollerbot','Moverbot','Laserbot','Evilbot'] },
+  'ev': { label: 'Environment',subs: ['Tiles','Structures','Interactable','Decoration'] },
+};
+
+// Store for dynamic data
+const state = {
+  images: [],    // [{path, label}]
+  changes: {}    // { sectionKey: { subHeading: [str,...] } }
+};
+
+// Init state
+for (const key of Object.keys(CHANGE_SCHEMA)) {
+  state.changes[key] = {};
+  for (const sub of CHANGE_SCHEMA[key].subs) {
+    state.changes[key][sub] = [];
+  }
+}
+
+// ══════════════════════════════════════════════════════
+//  BUILD CHANGE SUBSECTION UI
+// ══════════════════════════════════════════════════════
+function buildChangeSections() {
+  for (const [key, schema] of Object.entries(CHANGE_SCHEMA)) {
+    const container = document.getElementById(key + '-container');
+    container.innerHTML = '';
+    for (const sub of schema.subs) {
+      const div = document.createElement('div');
+      div.className = 'subsection';
+      div.innerHTML = `
+        <div class="subsection-header">${sub}</div>
+        <div class="subsection-body" id="changes-${key}-${slugify(sub)}">
+          <div class="changes-list" id="list-${key}-${slugify(sub)}"></div>
+          <button onclick="addChange('${key}','${sub}')">+ Add</button>
+        </div>
+      `;
+      container.appendChild(div);
+      renderChanges(key, sub);
+    }
+  }
+}
+
+function slugify(s) { return s.toLowerCase().replace(/[^a-z0-9]/g,'_'); }
+
+function renderChanges(key, sub) {
+  const listId = `list-${key}-${slugify(sub)}`;
+  const list = document.getElementById(listId);
+  if (!list) return;
+  list.innerHTML = '';
+  const items = state.changes[key][sub] || [];
+  items.forEach((val, i) => {
+    const row = document.createElement('div');
+    row.className = 'change-item';
+    row.innerHTML = `
+      <input type="text" value="${escapeAttr(val)}" placeholder="change description…"
+        oninput="updateChange('${key}','${sub}',${i},this.value)">
+      <button class="danger" onclick="removeChange('${key}','${sub}',${i})">✕</button>
+    `;
+    list.appendChild(row);
+  });
+}
+
+function addChange(key, sub) {
+  state.changes[key][sub].push('');
+  renderChanges(key, sub);
+  // focus last input
+  const list = document.getElementById(`list-${key}-${slugify(sub)}`);
+  const inputs = list.querySelectorAll('input');
+  if (inputs.length) inputs[inputs.length-1].focus();
+  render();
+}
+
+function updateChange(key, sub, i, val) {
+  state.changes[key][sub][i] = val;
+  render();
+}
+
+function removeChange(key, sub, i) {
+  state.changes[key][sub].splice(i, 1);
+  renderChanges(key, sub);
+  render();
+}
+
+// ══════════════════════════════════════════════════════
+//  BUILD IMAGE UI
+// ══════════════════════════════════════════════════════
+function rebuildImages() {
+  const container = document.getElementById('images-container');
+  container.innerHTML = '';
+  state.images.forEach((img, i) => {
+    const div = document.createElement('div');
+    div.className = 'image-entry';
+    div.innerHTML = `
+      <button class="danger remove-btn" onclick="removeImage(${i})">✕</button>
+      <div>
+        <label>Path</label>
+        <input type="text" value="${escapeAttr(img.path)}" placeholder="./image/log/2026/03/00.png"
+          oninput="updateImage(${i},'path',this.value)">
+      </div>
+      <div>
+        <label>Label / Caption</label>
+        <input type="text" value="${escapeAttr(img.label)}" placeholder="Here is some test text."
+          oninput="updateImage(${i},'label',this.value)">
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function addImage() {
+  state.images.push({ path: '', label: '' });
+  rebuildImages();
+  render();
+}
+
+function removeImage(i) {
+  state.images.splice(i, 1);
+  rebuildImages();
+  render();
+}
+
+function updateImage(i, field, val) {
+  state.images[i][field] = val;
+  render();
+}
+
+// ══════════════════════════════════════════════════════
+//  BUILD JSON OBJECT
+// ══════════════════════════════════════════════════════
+function buildJSON() {
+  const year    = v('f-year')    || '';
+  const month   = v('f-month')   || '';
+  const heading = v('f-heading') || '';
+  const projH   = v('f-proj-heading') || '';
+
+  // Commentary text array — omit blank entries
+  const commentTexts = [v('f-comment-0'), v('f-comment-1')].filter(t => t.trim() !== '');
+
+  // Build changes sections
+  const changeSections = Object.entries(CHANGE_SCHEMA).map(([key, schema]) => ({
+    heading: schema.label,
+    sections: schema.subs.map(sub => ({
+      heading: sub,
+      changes: [...(state.changes[key][sub] || []).filter(c => c.trim() !== '')]
+    }))
+  }));
+
+  return {
+    year,
+    month,
+    heading,
+    projects_included: projH ? [projH] : [],
+    projects: [
+      {
+        heading: projH,
+        classList: ['project-info'],
+        sections: [
+          {
+            id: 'commentary',
+            classList: ['commentary'],
+            heading: 'Commentary',
+            text: commentTexts
+          },
+          {
+            id: 'images',
+            classList: ['images'],
+            heading: 'Images',
+            entries: state.images.map(img => ({ path: img.path, label: img.label }))
+          },
+          {
+            id: 'changes',
+            classList: ['changes'],
+            heading: 'Changes',
+            sections: changeSections
+          }
+        ]
+      }
+    ]
+  };
+}
+
+// ══════════════════════════════════════════════════════
+//  RENDER JSON PREVIEW
+// ══════════════════════════════════════════════════════
+function render() {
+  try {
+    const obj = buildJSON();
+    const raw = JSON.stringify(obj, null, 2);
+    document.getElementById('json-output').innerHTML = highlight(raw);
+    setStatus('ok', 'valid JSON');
+  } catch(e) {
+    setStatus('err', 'error: ' + e.message);
+  }
+}
+
+function highlight(json) {
+  return json
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/("(\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, match => {
+      if (/^"/.test(match)) {
+        if (/:$/.test(match)) return `<span class="j-key">${match}</span>`;
+        return `<span class="j-str">${match}</span>`;
+      }
+      if (/true|false/.test(match)) return `<span class="j-bool">${match}</span>`;
+      if (/null/.test(match))       return `<span class="j-null">${match}</span>`;
+      return `<span class="j-num">${match}</span>`;
+    });
+}
+
+// ══════════════════════════════════════════════════════
+//  ACTIONS
+// ══════════════════════════════════════════════════════
+function copyJSON() {
+  const raw = JSON.stringify(buildJSON(), null, 2);
+  navigator.clipboard.writeText(raw).then(() => {
+    setStatus('ok', 'copied to clipboard!');
+    setTimeout(() => setStatus('', 'ready'), 2000);
+  });
+}
+
+function downloadJSON() {
+  const raw = JSON.stringify(buildJSON(), null, 2);
+  const blob = new Blob([raw], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  const year  = v('f-year')  || 'log';
+  const month = v('f-month') || 'xx';
+  a.download = `devlog-${year}-${month.toLowerCase()}.json`;
+  a.click();
+  setStatus('ok', 'downloaded!');
+  setTimeout(() => setStatus('', 'ready'), 2000);
+}
+
+function clearAll() {
+  if (!confirm('Clear all fields?')) return;
+  ['f-year','f-month','f-heading','f-proj-heading','f-comment-0','f-comment-1'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  state.images = [];
+  for (const key of Object.keys(CHANGE_SCHEMA)) {
+    for (const sub of CHANGE_SCHEMA[key].subs) {
+      state.changes[key][sub] = [];
+    }
+  }
+  rebuildImages();
+  buildChangeSections();
+  render();
+}
+
+function loadExample() {
+  document.getElementById('f-year').value    = '2026';
+  document.getElementById('f-month').value   = 'March';
+  document.getElementById('f-heading').value = 'Development Summary';
+  document.getElementById('f-proj-heading').value = 'Revenge of the PETSCII Robots';
+  document.getElementById('f-comment-0').value = 'On the last day of the month, combat finally came back together and felt like something substantial. The game had been in pieces for a long time because of massive code re-writes and it feels much more solid now. A chunk of time was wasted this month trying to rewrite or create pathfinding behavior. I solved the issue by making small changes to the provided pathfinding functions. I remembered "don\'t reinvent the wheel" and then I stopped, and now it\'s good enough. Also, I tried using Ubuntu\'s version of GameMaker on Kubuntu but I don\'t trust that version at all. I know that "enstruct" is not a real word, but I\'m going to start using it.';
+  document.getElementById('f-comment-1').value = 'enstruct (v) - reorganizing code into a struct';
+
+  state.images = [
+    { path: './image/log/2026/03/00.png', label: 'Here is some test text 0.' },
+    { path: './image/log/2026/03/01.png', label: 'Here is some test text 1.' },
+    { path: './image/log/2026/03/02.png', label: 'Here is some test text 2.' },
+    { path: './image/log/2026/03/03.png', label: 'Here is some test text 3.' },
+  ];
+
+  state.changes['pl']['Weapons'] = ['flamethrower', 'rocket launcher'];
+  state.changes['ev']['Structures'] = ['added walls'];
+
+  rebuildImages();
+  buildChangeSections();
+  render();
+}
+
+// ══════════════════════════════════════════════════════
+//  HELPERS
+// ══════════════════════════════════════════════════════
+function v(id) { return document.getElementById(id).value; }
+function escapeAttr(s) { return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function setStatus(cls, msg) {
+  const el = document.getElementById('status');
+  el.className = cls;
+  el.textContent = msg;
+}
+
+// ══════════════════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════════════════
+buildChangeSections();
+rebuildImages();
+render();
+</script>
+</body>
+</html>

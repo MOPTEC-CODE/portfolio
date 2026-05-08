@@ -1,8 +1,4 @@
-@media (max-width: 1600px) {
-    h1 {
-     
-    }
-}
+@media (max-width: 1600px) {}
 
 
 @media (max-width: 1024px) {
@@ -23,9 +19,10 @@
 
     a,
     p,
-    email {
+    email, figcaption, div.random-slash, .box ul li {
         font-size: clamp(0.4rem, 3vw, 1.1rem);
     }
+
 
     .header {
         z-index: 999;
@@ -37,10 +34,6 @@
 
     .cards .description p {
         font-size: clamp(0.4rem, 4vw, 2.5rem);
-    }
-
-    .card .description .subtitle {
-        font-size: clamp(0.4rem, 3vw, 2rem);
     }
 
     .header,
@@ -90,21 +83,47 @@
         margin-right: 2rem;
     }
 
-    .site-nav a:hover 
-    {
+    .site-nav a:hover {
         background: white;
         color: black;
         box-shadow: 0px 0px 0px white;
         text-shadow: 0px 0px 0px white;
 
-}
-    
+    }
+
+    .log .categories,
+    .log .dropdown {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .figure {
+        flex-direction: column;
+    }
+    .project .figure .wrapper{
+        width: 100%;
+    }
+    .project .figure .displayed-image {
+        width: 100%;
+    }
+
+    .thumbnail-gallery {
+        flex-wrap: wrap;
+    }
+
+    .thumbnail-gallery .custom-button {
+        /* margin: auto; */
+    }
+
+    .controls .categories{
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    h1 {
-
-    }
+    h1 {}
 
     .cards.grid {
         grid-template-columns: repeat(3, 1fr);
@@ -122,5 +141,10 @@
     p,
     email {
         font-size: clamp(0.4rem, 3vw, 1rem);
+    }
+
+    .controls .categories, .controls .dropdown
+    {
+        width: 75%;
     }
 }

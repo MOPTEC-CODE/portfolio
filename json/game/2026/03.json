@@ -1,0 +1,192 @@
+{
+  "year": "2026",
+  "month": "March",
+  "heading": "Development Summary",
+  "projects_included": [
+    "Revenge of the PETSCII Robots"
+  ],
+  "projects": [
+    {
+      "heading": "Revenge of the PETSCII Robots",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": [
+            "A lot got done this month and I'm happy about this.  For future reference, the player is named Vic (named after the VIC-20) and he's Italian-America from somewhere in Florida in the future. A lot of progress was finally related enemies. I am often \"slowed down\" by cleaning up code and I struggle with this. Sometimes, it's more fun making the code more efficient or cleaner than it is actually fixing bugs. Sometimes I waste time doing it but other times it's necessary and has saved me more work in the future. It also helps teach me which way of organizing the code is best or best for me and how I want to do something.",
+            "I managed to get GameMaker working on Kubuntu and near the end of the month I started developing the game with it exclusively. This was my second attempt. I had a ton of problems getting projects to actually run, but I finally did and now it's fine. I am scared to update it though after getting everything working. I use Kubuntu almost exclusively now and having to stop what I was doing and boot into Windows 11 always held me back a little from working on games."
+          ]
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": [
+            {
+              "path": "./image/log/2026/03/00.png",
+              "label": "This image shows a test area I'm using.  Vic is in the center. There are still some placeholder graphics The rollerbot never even got hands yet. Movebot is there at the top and there's a hoverbot on the left edge. The yellow splat is a goo-bomb explosion."
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "Input",
+                  "changes": [
+                    "Reorganized player input code.",
+                    "Improved general timer function to allow instances to react faster to changes.",
+                    "Improved collisions by creating a function to return a list of all colliding instances instead of just one. My previous simplistic way of checking collisions was causing a lot of problems."
+                  ]
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": []
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": [
+                    "Added pistol bullet shadows."
+                  ]
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": []
+                },
+                {
+                  "heading": "Environment",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "Weapons",
+                  "changes": []
+                },
+                {
+                  "heading": "Items",
+                  "changes": [
+                    "Enfunctioned code for using items."
+                  ]
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": [
+                    "Enfunctioned code when searching in-game objects for items.",
+                    "Enfunctioned code for pushing in-game objects."
+                  ]
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Fixed an issue where multiple movement inputs would cause Vic to not turn the way the player would expect."
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "Hoverbot",
+                  "changes": [
+                    "Most functionality was completed.",
+                    "Moves back and forth, follows and attacks player when attacked, dies"
+                  ]
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": [
+                    "Began reworking node system for creating in-game paths for the Rollerbots to follow."
+                  ]
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": [
+                    "Fixed bug where Moverbots can move instances they should not be able to (including walls!).",
+                    "Added punching attack.",
+                    "Attempted to make Moverbots chase Vic while pushing  in-game objects out of the way. This did not work so now Moverbots punch anything in the way until they are destroyed."
+                  ]
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "Tiles",
+                  "changes": []
+                },
+                {
+                  "heading": "Structures",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": [
+                    "Environmental objects that can be moved, can also be destroyed. This allows Moverbots to chase the player correctly but also makes the game world feel more dynamic."
+                  ]
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

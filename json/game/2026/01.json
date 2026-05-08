@@ -1,9 +1,10 @@
 {
     "year": "2026",
-    "month": "March",
+    "month": "January",
     "heading": "Development Summary",
     "projects_included": [
-        "Revenge of the PETSCII Robots"
+        "Revenge of the PETSCII Robots",
+        "WhiteHex Library"
     ],
     "projects": [
         {
@@ -19,8 +20,7 @@
                     ],
                     "heading": "Commentary",
                     "text": [
-                        "On the last day of the month, combat finally came back together and felt like something substantial. The game had been in pieces for a long time because of massive code re-writes and it feels much more solid now. A chunk of time was wasted this month trying to rewrite or create pathfinding behavior. I solved the issue by making small changes to the provided pathfinding functions. I remembered \"don't reinvent the wheel\" and then I stopped, and now it's good enough. Also, I tried using Ubuntu's version of GameMaker on Kubuntu but I don't trust that version at all. I know that \"enstruct\" is not a real word, but I'm going to start using it.",
-                        "enstruct (v) - reorganizing code into a struct"
+                        "I was not intending to work on <i>Revenge of the PETSCII Robots</i> in January since I had a lot of work to do at my actual job(s). I ended up doing much more than nothing. I'm learning disclipine and to not only code when I feel like it. I want this game done. Hopefully by the end of 2026. I want to work on projects that are fully mine."
                     ]
                 },
                 {
@@ -29,24 +29,7 @@
                         "images"
                     ],
                     "heading": "Images",
-                    "entries": [
-                        {
-                            "path": "./image/log/2026/03/00.png",
-                            "label": "Here is some test text 0."
-                        },
-                        {
-                            "path": "./image/log/2026/03/01.png",
-                            "label": "Here is some test text 1."
-                        },
-                        {
-                            "path": "./image/log/2026/03/02.png",
-                            "label": "Here is some test text 2."
-                        },
-                        {
-                            "path": "./image/log/2026/03/03.png",
-                            "label": "Here is some test text 3."
-                        }                        
-                    ]
+                    "entries": null
                 },
                 {
                     "id": "changes",
@@ -59,8 +42,29 @@
                             "heading": "Game Logic",
                             "sections": [
                                 {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Unified player projectile and enemy projectile code.",
+                                        "Added get facing function to find out where an object is turned to.",
+                                        "Added opposite direction function.",
+                                        "Added facing to image angle function.",
+                                        "Rewrote various functions to make them portable.",
+                                        "Removed un-used functions and variables.",
+                                        "Separated functions into groups within separate script files for better organization.",
+                                        "Functionized enemy and player code.",
+                                        "Reorganized enemy parent object creation code."
+                                    ]
+                                },
+                                {
                                     "heading": "Input",
                                     "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": [
+                                        "Added a unified movement function that combines move and move-push capabilities.",
+                                        "Reorganized player movement input code to be less redundant."
+                                    ]
                                 },
                                 {
                                     "heading": "Text",
@@ -72,13 +76,21 @@
                                 },
                                 {
                                     "heading": "UI",
-                                    "changes": []
+                                    "changes": [
+                                        "Added draw label function for displaying debug information in horizontal rows on instances."
+                                    ]
                                 }
                             ]
                         },
                         {
                             "heading": "Graphics",
                             "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Added a create effect function for creating sparks etc."
+                                    ]
+                                },
                                 {
                                     "heading": "Color Palette",
                                     "changes": []
@@ -111,8 +123,8 @@
                                 {
                                     "heading": "Weapons",
                                     "changes": [
-                                        "flamethrower",
-                                        "rocket launcher"
+                                        "Enstructed projectile code.",
+                                        "Improved projectile collision code."
                                     ]
                                 },
                                 {
@@ -133,8 +145,22 @@
                             "heading": "Enemies",
                             "sections": [
                                 {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Breadcrumb function to display where an instance's pathfinding path leads.",
+                                        "Pathfinding function for grid creation. (defunct)",
+                                        "Pathfinding function for drawing the grid. (defunct)",
+                                        "Reimplemented enemy Alert mode.",
+                                        "Reduced the frequency of path updates and shrunk pathfinding cells to avoid corner cutting and juking when the player rapidly changes position.",
+                                        "Greatly improved enemy random walk code."
+                                    ]
+                                },
+                                {
                                     "heading": "Hoverbot",
-                                    "changes": []
+                                    "changes": [
+                                        "Added attack (electricity).",
+                                        "Reimplemented death."
+                                    ]
                                 },
                                 {
                                     "heading": "Rollerbot",
@@ -163,9 +189,7 @@
                                 },
                                 {
                                     "heading": "Structures",
-                                    "changes": [
-                                        "added walls"
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Interactable",
@@ -174,6 +198,53 @@
                                 {
                                     "heading": "Decoration",
                                     "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "WhiteHex Library",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": [
+                        "Development on this will be sporadic until Revenge of the PETSCII Robots is finished."
+                    ]
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Overview",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Began moving development to Linux.",
+                                        "Attempting to figure out what state I left the project in and why no graphics are being displayed."
+                                    ]
                                 }
                             ]
                         }
