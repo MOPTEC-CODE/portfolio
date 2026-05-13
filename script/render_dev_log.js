@@ -70,15 +70,15 @@ controlData.selector.month.button.classList.add("disabled");
 controlData.selector.year.button.classList.add("disabled");
 
 // Dropdown Menus
-for (var i = 0; i < controlData.dropdownMenu.type.button.length; i++)
+for (let i = 0; i < controlData.dropdownMenu.type.button.length; i++)
 {
     controlData.dropdownMenu.type.button[i].addEventListener("click", button_activate);
 }
-for (var i = 0; i < controlData.dropdownMenu.year.button.length; i++)
+for (let i = 0; i < controlData.dropdownMenu.year.button.length; i++)
 {
     controlData.dropdownMenu.year.button[i].addEventListener("click", button_activate);
 }
-for (var i = 0; i < controlData.dropdownMenu.month.button.length; i++)
+for (let i = 0; i < controlData.dropdownMenu.month.button.length; i++)
 {
     controlData.dropdownMenu.month.button[i].addEventListener("click", button_activate);
 }
@@ -89,12 +89,12 @@ function set_buttons(_manifestData)
         let data = _manifestData.game;
         if (state.year)
         {
-            for (var i = 0; i < data.length; i++)
+            for (let i = 0; i < data.length; i++)
             {
                 // Check if years have null months
                 if (data[i].month === null)
                 {
-                    for (var j = 0; j < controlData.dropdownMenu.year.button.length; j++)
+                    for (let j = 0; j < controlData.dropdownMenu.year.button.length; j++)
                     {
                         controlData.dropdownMenu.year.button[j].classList.add("disabled");
                         if (controlData.dropdownMenu.year.button[j].dataset.year === data[i].year)
@@ -108,15 +108,15 @@ function set_buttons(_manifestData)
         else if (state.month)
         {
             let year = fileData.year;
-            for (var i = 0; i < data.length; i++)
+            for (let i = 0; i < data.length; i++)
             {
                 if (data[i].year === fileData.year)
                 {
-                    for (var j = 0; j < controlData.dropdownMenu.month.button.length; j++)
+                    for (let j = 0; j < controlData.dropdownMenu.month.button.length; j++)
                     {
                         console.log(data[i].month);
                         controlData.dropdownMenu.month.button[j].classList.add("disabled");
-                        for (var k = 0; k < data[i].month.length; k++)
+                        for (let k = 0; k < data[i].month.length; k++)
                         {
                             if (controlData.dropdownMenu.month.button[j].dataset.month === data[i].month[k])
                             {
@@ -133,12 +133,12 @@ function set_buttons(_manifestData)
         let data = _manifestData.web;
         if (state.year)
         {
-            for (var i = 0; i < data.length; i++)
+            for (let i = 0; i < data.length; i++)
             {
                 // Check if years have null months
                 if (data[i].month === null)
                 {
-                    for (var j = 0; j < controlData.dropdownMenu.year.button.length; j++)
+                    for (let j = 0; j < controlData.dropdownMenu.year.button.length; j++)
                     {
                         if (controlData.dropdownMenu.year.button[j].dataset.year === data[i].year)
                         {
@@ -151,14 +151,14 @@ function set_buttons(_manifestData)
         else if (state.month)
         {
             let year = fileData.year;
-            for (var i = 0; i < data.length; i++)
+            for (let i = 0; i < data.length; i++)
             {
                 if (data[i].year === fileData.year)
                 {
-                    for (var j = 0; j < controlData.dropdownMenu.month.button.length; j++)
+                    for (let j = 0; j < controlData.dropdownMenu.month.button.length; j++)
                     {
                         controlData.dropdownMenu.month.button[j].classList.add("disabled");
-                        for (var k = 0; k < data[i].month.length; k++)
+                        for (let k = 0; k < data[i].month.length; k++)
                         {
                             if (controlData.dropdownMenu.month.button[j].dataset.month === data[i].month[k])
                             {
@@ -391,69 +391,69 @@ function button_activate(event)
     }
 }
 
-function manage_buttons()
-{
-    let controlButton = event.currentTarget;
+// function manage_buttons()
+// {
+//     let controlButton = event.currentTarget;
 
-    switch (controlButton.dataset.buttonType)
-    {
-        case "category":
-            // Reset top category selections
-            buttons.categories.type.classList.remove("silver");
-            buttons.categories.month.classList.remove("silver");
-            buttons.categories.year.classList.remove("silver");
-            // Reset dropdown menu selections
-            lists.type.classList.add("display-none");
-            lists.year.classList.add("display-none");
-            lists.month.classList.add("display-none");
-            // Highlight clicked button
-            controlButton.classList.add("selected", "silver");
+//     switch (controlButton.dataset.buttonType)
+//     {
+//         case "category":
+//             // Reset top category selections
+//             buttons.categories.type.classList.remove("silver");
+//             buttons.categories.month.classList.remove("silver");
+//             buttons.categories.year.classList.remove("silver");
+//             // Reset dropdown menu selections
+//             lists.type.classList.add("display-none");
+//             lists.year.classList.add("display-none");
+//             lists.month.classList.add("display-none");
+//             // Highlight clicked button
+//             controlButton.classList.add("selected", "silver");
 
-            // Click control button, show category
-            switch (controlButton.dataset.category)
-            {
-                case "type":
-                    lists.type.classList.remove("display-none");
-                    buttons.categories.classList.add("selected", "silver");
-                    break;
-                case "year":
-                    lists.year.classList.remove("display-none");
-                    break;
-                case "month":
-                    lists.month.classList.remove("display-none");
-                    break;
-            }
-            break;
-        // Sub buttons
-        case "type":
-            buttons.categories.year.classList.add("silver", "selected");
-            buttons.categories.type.classList.add("gold", "selected");
-            fileData.type = controlButton.dataset.type;
-            //open next section
-            buttons.categories.year.classList.remove("disabled");
-            lists.type.classList.add("display-none");
-            lists.year.classList.remove("display-none");
-            break;
-        case "year":
-            buttons.categories.month.classList.add("silver", "selected");
-            buttons.categories.year.classList.add("gold", "selected");
-            fileData.year = controlButton.dataset.year;
-            //open next section
-            buttons.categories.month.classList.remove("disabled");
-            lists.year.classList.add("display-none");
-            lists.month.classList.remove("display-none");
-            break;
-        case "month":
-            buttons.categories.month.classList.add("gold", "selected");
-            lists.month.classList.add("display-none");
-            fileData.month = controlButton.dataset.month;
-            break;
-    }
-    if (fileData.type != "" && fileData.year != "" && fileData.month != "")
-    {
-        initalize_data(`./json/${fileData.type}/${fileData.year}/${fileData.month}.json`);
-    }
-}
+//             // Click control button, show category
+//             switch (controlButton.dataset.category)
+//             {
+//                 case "type":
+//                     lists.type.classList.remove("display-none");
+//                     buttons.categories.classList.add("selected", "silver");
+//                     break;
+//                 case "year":
+//                     lists.year.classList.remove("display-none");
+//                     break;
+//                 case "month":
+//                     lists.month.classList.remove("display-none");
+//                     break;
+//             }
+//             break;
+//         // Sub buttons
+//         case "type":
+//             buttons.categories.year.classList.add("silver", "selected");
+//             buttons.categories.type.classList.add("gold", "selected");
+//             fileData.type = controlButton.dataset.type;
+//             //open next section
+//             buttons.categories.year.classList.remove("disabled");
+//             lists.type.classList.add("display-none");
+//             lists.year.classList.remove("display-none");
+//             break;
+//         case "year":
+//             buttons.categories.month.classList.add("silver", "selected");
+//             buttons.categories.year.classList.add("gold", "selected");
+//             fileData.year = controlButton.dataset.year;
+//             //open next section
+//             buttons.categories.month.classList.remove("disabled");
+//             lists.year.classList.add("display-none");
+//             lists.month.classList.remove("display-none");
+//             break;
+//         case "month":
+//             buttons.categories.month.classList.add("gold", "selected");
+//             lists.month.classList.add("display-none");
+//             fileData.month = controlButton.dataset.month;
+//             break;
+//     }
+//     if (fileData.type != "" && fileData.year != "" && fileData.month != "")
+//     {
+//         initalize_data(`./json/${fileData.type}/${fileData.year}/${fileData.month}.json`);
+//     }
+// }
 
 function random_slash()
 {
@@ -488,7 +488,7 @@ function render_log()
     logOutput.appendChild(title);
 
     // PROJECTS INCLUDED
-    let projectsIncluded = create_element("div", ["box", "projects-included"], null);
+    let projectsIncluded = create_element("div", ["box", "included", "prose"], null);
     projectsIncluded.appendChild(create_element("h2", null, null, "Projects Included"));
 
     let projectsList = create_element("ul");
@@ -515,13 +515,12 @@ function render_log()
 function render_project(_projectIndex)
 {
     let projectData = logData.projects[_projectIndex];
-    let parent = create_element("section", ["project", "box", "flex-col"]);
+    let parent = create_element("section", ["project", "box", "prose", "flex-col"]);
     let title = create_element("h2", "title", null, projectData.heading);
     parent.appendChild(title);
 
     // Append project sections
     parent.appendChild(get_commentary_section(projectData.sections[0], _projectIndex));
-    // if (projectData.sections[1].)
     if (projectData.sections[1].entries != null)
     {
         parent.appendChild(get_images_section(projectData.sections[1], _projectIndex));

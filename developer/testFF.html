@@ -283,7 +283,7 @@
             const div = document.createElement("div");
             div.classList.add("developer");
             div.innerHTML = `
-                <h3>${developerName}</h3>
+                <h3 class="hori-line">${developerName}</h3>
                 <p>Born: ${developer.born}</p>
                 <p>Nationality: ${developer.nationality}</p>
             `;
@@ -303,7 +303,7 @@
             const div = document.createElement("div");
             div.classList.add("game");
             div.innerHTML = `
-                <h3>${game.name}</h3>
+                <h3 class="hori-line">${game.name}</h3>
                 <p>Year: ${game.year}</p>
                 <p>Developers: <strong>${game.developers.map(dev => Object.keys(developerData).find(key => developerData[key] === dev)).join(", ")}</strong></p>
             `;

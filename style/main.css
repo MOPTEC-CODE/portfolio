@@ -28,8 +28,9 @@
 
     /* Fonts */
     --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-mono: monospace;
-
+    --font-sans: monospace;
+    --font-regular: "Roboto", sans-serif;
+    --font-mono: "Roboto Mono", monospace;
 }
 
 * {
@@ -38,8 +39,11 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     font-size: 16px;
+    scrollbar-gutter: stable;
 }
 
 html,
@@ -50,7 +54,11 @@ body {
 
 body {
     background-color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-regular);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     color: #333333;
     position: relative;
 }
@@ -66,6 +74,7 @@ body::before {
     background-repeat: repeat;
     filter: blur(3px) opacity(0.5);
     z-index: -100;
+
 }
 
 a {
@@ -98,13 +107,17 @@ footer {
     flex-direction: column;
 }
 
+button{
+    font-family: var(--font-mono);
+}
+
 ul {
     list-style-type: none;
 }
 
 h1,
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: white;
 }
 
@@ -142,7 +155,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -150,6 +163,10 @@ h3 {
 h4 {
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+.changes h4 {
+    text-indent: 0.5rem;
 }
 
 h5 {
@@ -185,11 +202,20 @@ h2.hori-line::after {
 }
 
 .box {
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 2rem;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 1rem;
     box-shadow: 0px 4px 10px #d2d2d2;
+    width: 100%;
+}
+
+.box.prose p,
+.box figcaption {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .indent-content {
@@ -201,8 +227,7 @@ h2.hori-line::after {
     text-align: center;
 }
 
-
-.log .projects-included {
+.log .included {
     flex: 1;
 }
 
@@ -213,12 +238,12 @@ figcaption {
     color: rgb(34, 34, 34);
 }
 
-.changes ul {
+ul {
     list-style-type: none;
     padding-left: 0.5rem;
 }
 
-.changes ul li::before {
+ul li::before {
     content: "- ";
 }
 
@@ -236,14 +261,6 @@ figcaption {
     align-items: center;
 }
 
-.projects-included ul {
-    padding-left: 0.5rem;
-}
-
-.projects-included ul li:before {
-    content: "▸ "
-}
-
 .commentary {
     text-align: justify;
 }
@@ -256,7 +273,6 @@ figcaption {
 }
 
 .thumbnail-gallery {
-
     gap: 1rem;
 }
 
@@ -297,18 +313,16 @@ p.muted {
 }
 
 .project .figure .displayed-image {
-    width: 60%;
+    width: 50%;
 }
 
 .project .figure .wrapper {
-    width: 40%;
+    width: 50%;
 }
 
 .project .thumbnail-gallery .custom-button.selected {
-    /* border: 0.125rem solid white; */
     border-color: black;
 }
-
 
 .custom-button.wide {
     width: 14rem;
@@ -317,7 +331,6 @@ p.muted {
 .inactive {
     filter: blur(2px) brightness(0.9);
 }
-
 
 .controls {
     width: 100%;
@@ -355,7 +368,6 @@ p.muted {
     text-decoration: none;
     color: var(--coal);
     border-radius: 1rem;
-    /* font-family: roboto; */
     font-family: var(--font-mono);
 }
 
@@ -373,7 +385,6 @@ p.muted {
     color: white;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -2px 2px rgba(60, 60, 60, 0.25), 0 4px 3px rgba(29, 29, 29, 0.15);
     text-shadow: 0px 1px 4px #573f00;
-
 }
 
 .logo {
@@ -396,7 +407,8 @@ p.muted {
     text-align: center;
 }
 
-.log .categories, .log .dropdown{
+.log .categories,
+.log .dropdown {
     width: 50%;
     margin: 0 auto;
 }
@@ -441,6 +453,7 @@ p.muted {
 
 .cards.grid {
     width: 100%;
+    gap: 1.5rem;
 }
 
 .controls .categories {
@@ -463,7 +476,6 @@ h3.hori-line.random-slash::after {
 
 .card {
     background: white;
-    margin: 1rem;
     border: 1px solid var(--ash);
     box-shadow: 0px 2px 5px #dadada;
 }
@@ -474,9 +486,7 @@ h3.hori-line.random-slash::after {
 }
 
 .card img {
-  
     max-width: 100%;
-
     margin-inline: auto;
 }
 
@@ -497,14 +507,12 @@ h3.hori-line.random-slash::after {
     border-top: 1px solid #e0e0e0;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
     border-radius: 0 0 1rem 1rem;
-
 }
 
 .card .description p {
     margin: 0 auto;
     font-size: clamp(0.5rem, 1vw, 1rem);
     font-weight: 400;
-    font-family: var(--font-mono);
     text-transform: uppercase;
     text-shadow: -1px -1px 5px white;
 }
@@ -537,10 +545,10 @@ h3.hori-line.random-slash::after {
     padding-bottom: 0;
 }
 
-
 .box ul li {
     font-size: 1rem;
     margin-bottom: 0.25rem;
+    line-height: 1.6;
 }
 
 .box h4 {
@@ -567,8 +575,6 @@ h3.hori-line.random-slash::after {
     position: fixed;
     bottom: 1rem;
     left: 0;
-
-
     width: var(--nav-offset);
 }
 
@@ -579,40 +585,80 @@ h3.hori-line.random-slash::after {
     font-size: 0.8rem;
 }
 
-.log .custom-button.disabled
-{
-    background-color: gray;
+.log .custom-button.disabled {
+    background-color: var(--ash);
+    color: var(--salt);
 }
-.log .custom-button.disabled:hover
-{
+
+.log .custom-button.disabled:hover {
     cursor: not-allowed;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
-.dropdown{
+
+.dropdown {
     position: relative;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: grid;
     width: 100%;
     position: absolute;
     background-color: var(--background);
     top: 1.5rem;
     gap: 0.25rem;
+    border: 0.1rem solid var(--ash);
 }
-.dropdown-menu.left{
-    margin-left: 0;
-    margin-right: auto;
-}
-.dropdown-menu.middle{
-    margin-inline: auto;
-}
-.dropdown-menu.right{
-    margin-right: 0;
-    margin-left: auto;
-}
-.strong{
+
+.strong {
     font-weight: bold;
+}
+
+.box.screenshot,
+#screenshot {
+    min-height: 50rem;
+    /*arbitrary*/
+    background-color: white;
+}
+
+#screenshot {
+    max-width: 100%;
+}
+
+.screenshot {
+    width: 100%;
+}
+
+.card-border {
+    border: 1px solid var(--ash);
+    box-shadow: 0px 2px 5px #dadada;
+    border-radius: 1rem;
+}
+
+.materia {
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.relative {
+    position: relative;
+}
+
+#bio {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#materia {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+#bio:hover #materia {
+    opacity: 1;
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- JS -->
+    <script src="./script/portable.js" defer></script>
+    <script src="./script/screenshotArea.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="image/meat-monochrome-favicon.ico">
+    <title>MOPTEC - PORTFOLIO</title>
+    <meta name="description" content="MOPTEC | Web Developer | Game Developer">
+    <meta name="author" content="MOPSPEAR">
+</head>
+
+<body class="flex-row">
+    <header class="header box flex-col">
+        <div class="logo wrapper flex-col">
+            <img src="./image/logo.png">
+        </div>
+        <nav class="site-nav flex-col">
+            <a href="./index.html" class="custom-button">PORTFOLIO</a>
+            <a href="./about.html" class="custom-button">DEVELOPER</a>
+            <a href="./contact.html" class="custom-button">CONTACT</a>
+            <a href="./devlog.html" class="custom-button">DEVLOG</a>
+            <a class="custom-button disabled">ART</a>
+        </nav>
+    </header>
+    <main class="main flex-col">
+        <h1>WEB PROJECT</h1>
+
+        <section class="box prose">
+            <h2>OUR LADY OF CONFIDENCE CARMELITE MONASTERY</h2>
+
+            <p><strong>Link:</strong> <i>Defunct</i></p>
+
+            <p><strong>Made With:</strong> Wix</p>
+
+            <h3>Customer</h3>
+            <p>Our Lady of Confidence Carmelite Monastery was located in <a
+                    href="https://en.wikipedia.org/wiki/Savannah,_Georgia" target="_blank">Savannah, Georgia</a>. Unfortunately, the
+                monastery closed, so I had to take down the website. Before this happened, I was hired to update and
+                maintain the site.</p>
+
+
+            <h3>Development</h3>
+            <p>The original website was created with <a href="https://www.wix.com/">Wix</a> by <a
+                    href="https://www.kuciaconsulting.com/">Kucia Consulting</a> using one of the “Church”
+                templates. As
+                the needs of the monastery changed, more and more elements of the site needed to be modified or
+                removed.
+                I used this opportunity to eliminate many characteristic Wix “giveaways”. My goal was to make the
+                website look as unique as possible within the time and design constraints I was working under.</p>
+            <p>Before I took down the website, I was able to back up the data with permission from the monastery
+                staff. In the future, I would like to rebuild the site from scratch (minus the idenifying details)
+                as a portfolio example. Until then, I have
+                included screenshots showing what it looked like.</p>
+
+        </section>
+        <section class="box screenshot">
+            <h2>
+                Screenshots
+            </h2>
+            <div class="cards grid" id="screenshotAreaHide">
+                <button data-image="00" class="card screenshot-area-button flex-col">
+                    <div class="wrapper">
+                        <img src="./image/screenshot/carmelite/00_thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>HOME</p>
+                    </div>
+                </button>
+                <button data-image="01" class="card screenshot-area-button flex-col">
+                    <div class="wrapper">
+                        <img src="./image/screenshot/carmelite/01_thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>history</p>
+                    </div>
+                </button>
+                <button data-image="02" class="card screenshot-area-button flex-col">
+                    <div class="wrapper">
+                        <img src="./image/screenshot/carmelite/02_thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>charism</p>
+                    </div>
+                </button>
+                <button data-image="03" class="card screenshot-area-button flex-col">
+                    <div class="wrapper">
+                        <img src="./image/screenshot/carmelite/03_thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>the priests we</p>
+                        <p>pray for</p>
+                    </div>
+                </button>
+                <button data-image="04" class="card screenshot-area-button flex-col">
+                    <div class="wrapper">
+                        <img src="./image/screenshot/carmelite/04_thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>Carmelite Saints</p>
+                        <p>and Prayers</p>
+                    </div>
+                </button>
+            </div>
+            <div id="screenshotArea" class="screenshot display-none">
+                <img id="screenshot" class="screenshot card-border">
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
