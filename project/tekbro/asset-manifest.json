@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.19eff1a0.css",
-    "main.js": "./static/js/main.0075e472.js",
-    "static/media/NavineDemo-SemiCondensed.ttf": "./static/media/NavineDemo-SemiCondensed.4637b5a35051f1dbc5eb.ttf",
-    "static/media/NavineDemo-SemiCondensed Italic.ttf": "./static/media/NavineDemo-SemiCondensed Italic.1dd07aba16532c3dbf0b.ttf",
-    "index.html": "./index.html",
-    "main.19eff1a0.css.map": "./static/css/main.19eff1a0.css.map",
-    "main.0075e472.js.map": "./static/js/main.0075e472.js.map"
+    "main.css": "/project/tekbro/static/css/main.d187f75a.css",
+    "main.js": "/project/tekbro/static/js/main.ea977aa3.js",
+    "static/media/NavineDemo-SemiCondensed.ttf": "/project/tekbro/static/media/NavineDemo-SemiCondensed.4637b5a35051f1dbc5eb.ttf",
+    "static/media/NavineDemo-SemiCondensed Italic.ttf": "/project/tekbro/static/media/NavineDemo-SemiCondensed Italic.1dd07aba16532c3dbf0b.ttf",
+    "index.html": "/project/tekbro/index.html",
+    "main.d187f75a.css.map": "/project/tekbro/static/css/main.d187f75a.css.map",
+    "main.ea977aa3.js.map": "/project/tekbro/static/js/main.ea977aa3.js.map"
   },
   "entrypoints": [
-    "static/css/main.19eff1a0.css",
-    "static/js/main.0075e472.js"
+    "static/css/main.d187f75a.css",
+    "static/js/main.ea977aa3.js"
   ]
 }
