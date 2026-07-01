@@ -1,0 +1,218 @@
+{
+    "year": "2026",
+    "month": "May",
+    "heading": "Development Summary",
+    "projects_included": [
+        "Revenge of the PETSCII Robots"
+    ],
+    "projects": [
+        {
+            "heading": "Revenge of the PETSCII Robots",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": []
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Added console object with log function for unified debugging output between GML and JavaScript (defunct)",
+                                        "Projectiles improved by taking into account contact with multiple instances at once.",
+                                        "Added room initialization function."
+                                    ]
+                                },
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": [
+                                        "Worked on pathfinding system issues with many issues encountered",
+                                        "Created a separate array table to track reserved movement spaces",
+                                        "Added another custom function to display custom pathfinding grid for debugging",
+                                        "Added function to remove blocked pathfinding cells (defunct)"
+                                    ]
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": [
+                                        "Removed deprecated code and comments",
+                                        "Cleaned up main object structure significantly",
+                                        "Postponing further refactoring until the enemy contoller object is refactored"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Weapons",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Enemies no longer killing themselves from broken projectile collisions",
+                                        "Checked enemy what enemies still had missing/broken abilities",
+                                        "Fixed enemy pathfinding system to a workable state"
+                                    ]
+                                },
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": [
+                                        "Re-enabled Hoverbot attack behavior"
+                                    ]
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": [
+                                        "Fixed Rollerbot not turning after attacking",
+                                        "Fixed Rollerbot reaction to being attacked by player"
+                                    ]
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": [
+                                        "Moverbot behavior is mostly stable"
+                                    ]
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Tiles",
+                                    "changes": [
+                                        "Enfunctioned and refined tile randomization."
+                                    ]
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

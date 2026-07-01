@@ -79,6 +79,10 @@
                                     "changes": [
                                         "Added draw label function for displaying debug information in horizontal rows on instances."
                                     ]
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": []
                                 }
                             ]
                         },
@@ -120,6 +124,10 @@
                         {
                             "heading": "Player",
                             "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
                                 {
                                     "heading": "Weapons",
                                     "changes": [
@@ -184,6 +192,10 @@
                             "heading": "Environment",
                             "sections": [
                                 {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
                                     "heading": "Tiles",
                                     "changes": []
                                 },
@@ -197,6 +209,10 @@
                                 },
                                 {
                                     "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
                                     "changes": []
                                 }
                             ]

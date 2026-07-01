@@ -1,0 +1,206 @@
+{
+  "year": "2025",
+  "month": "September",
+  "heading": "Development Summary",
+  "projects_included": [
+    "Revenge of the PETSCII Robots"
+  ],
+  "projects": [
+    {
+      "heading": "Revenge of the PETSCII Robots",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": []
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Input",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Worked on smooth movement",
+                    "Undoing step-based movement system",
+                    "Cleaned up player code to remove old step-based movement",
+                    "Redid movement system but player can move but does not turn correctly",
+                    "Fixed player turning behavior when multiple inputs are pressed",
+                    "Refactored player code into state-based cases"
+                  ]
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                },
+                {
+                  "heading": "Organization",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": []
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": [
+                    "Restored player animation during turning",
+                    "Player animations still partially broken during movement transitions",
+                    "Fixed player movement sprite transitions on start/stop"
+                  ]
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": []
+                },
+                {
+                  "heading": "Environment",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Weapons",
+                  "changes": []
+                },
+                {
+                  "heading": "Items",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Fixed collision issue preventing player from touching walls due to overextended collision checks",
+                    "Fixed player movement not working after changes to movement system"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Hoverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Tiles",
+                  "changes": []
+                },
+                {
+                  "heading": "Structures",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": []
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                },
+                {
+                  "heading": "Traps",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

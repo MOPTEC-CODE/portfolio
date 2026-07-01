@@ -39,8 +39,6 @@
     box-sizing: border-box;
 }
 
-
-
 html {
     font-size: 16px;
     scrollbar-gutter: stable;
@@ -72,9 +70,8 @@ body::before {
     bottom: 0;
     background-image: url("../image/maze.png");
     background-repeat: repeat;
-    filter: blur(3px) opacity(0.5);
+    filter: blur(2px) opacity(0.6);
     z-index: -100;
-
 }
 
 a {
@@ -640,9 +637,12 @@ h3.hori-line.random-slash::after {
 
 .materia {
     height: 1.5rem;
+    width: 1.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.1s ease;
 }
 
 .relative {
@@ -655,11 +655,6 @@ h3.hori-line.random-slash::after {
     cursor: pointer;
 }
 
-#materia {
-    opacity: 0;
-    transition: opacity 0.1s ease;
-}
-
-#bio:hover #materia {
+#bio:hover .materia {
     opacity: 1;
 }

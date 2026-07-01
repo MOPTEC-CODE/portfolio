@@ -1,0 +1,423 @@
+{
+  "year": "2025",
+  "month": "November",
+  "heading": "Development Summary",
+  "projects_included": [
+    "Revenge of the PETSCII Robots",
+    "WhiteHex Library"
+  ],
+  "projects": [
+    {
+      "heading": "Revenge of the PETSCII Robots",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": []
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Input",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Fixed box movement behavior when pressing two directions (unable to slide along other objects)",
+                    "Fixed movement state not restoring speed immediately after releasing movement input",
+                    "Player movement and turning corrected for proper directional behavior"
+                  ]
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                },
+                {
+                  "heading": "Organization",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": []
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": [
+                    "Reworked player sprite struct",
+                    "Completed new player sprite struct system",
+                    "Fixed player animation during shooting",
+                    "Fixed player turning and shooting animations",
+                    "Resolved issue where player continued walking animation while idle (partially unresolved in earlier iteration)"
+                  ]
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": [
+                    "Increased rollerbot hitbox width for collision checking",
+                    "Added timer-based delay before rollerbot turns when outside vision cone",
+                    "Improved rollerbot debug visualization",
+                    "Adjusted rollerbot behavior for smoother response"
+                  ]
+                },
+                {
+                  "heading": "Environment",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Weapons",
+                  "changes": [
+                    "Re-added projectile collision system",
+                    "Compiled deployable weapon code into parent system"
+                  ]
+                },
+                {
+                  "heading": "Items",
+                  "changes": [
+                    "Item pickup from box confirmed working",
+                    "Item use system broken or unverified (input uncertain)"
+                  ]
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": [
+                    "Weapon pickup from box confirmed working",
+                    "Box interaction system partially broken when moving and pushing simultaneously",
+                    "Shooting system broken; player defaults to walking animation"
+                  ]
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Box movement partially working but breaks when moving diagonally",
+                    "Movement state issues require re-triggering input to restore speed"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Hoverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Tiles",
+                  "changes": []
+                },
+                {
+                  "heading": "Structures",
+                  "changes": [
+                    "Teleportation system implemented in WhiteHex Library (affects structure logic indirectly)"
+                  ]
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": []
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                },
+                {
+                  "heading": "Traps",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        }
+      ]
+    },
+    {
+      "heading": "WhiteHex Library",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": []
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": [
+                    "Cleaned up code structure and refactored functions",
+                    "Redid functions and structs for teleportation system"
+                  ]
+                },
+                {
+                  "heading": "Input",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": []
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                },
+                {
+                  "heading": "Organization",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": [
+                    "Reduced resolution for testing purposes"
+                  ]
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": []
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": []
+                },
+                {
+                  "heading": "Environment",
+                  "changes": [
+                    "Implemented teleportation tiles",
+                    "Worked on teleportation systems"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Weapons",
+                  "changes": []
+                },
+                {
+                  "heading": "Items",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Hoverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Tiles",
+                  "changes": []
+                },
+                {
+                  "heading": "Structures",
+                  "changes": [
+                    "Implemented teleporters and supporting systems"
+                  ]
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": []
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                },
+                {
+                  "heading": "Traps",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

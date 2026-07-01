@@ -1,0 +1,411 @@
+{
+  "year": "2025",
+  "month": "December",
+  "heading": "Development Summary",
+  "projects_included": [
+    "Revenge of the PETSCII Robots",
+    "WhiteHex Library"
+  ],
+  "projects": [
+    {
+      "heading": "Revenge of the PETSCII Robots",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": []
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": [
+                    "Created function for deployable items dropped on walls",
+                    "Created reusable timer function",
+                    "Added deployable system improvements",
+                    "Goo bomb rewrite attempt to condense into single instance",
+                    "Cleaned up goo bomb code",
+                    "Added goo bomb spread speed tuning (spread was previously near-instant)"
+                  ]
+                },
+                {
+                  "heading": "Input",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": [
+                    "Redid movement and movement-plus-pushing object system",
+                    "Allowed release of pushable objects during interaction",
+                    "Redid movement and pushing object function integration"
+                  ]
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                },
+                {
+                  "heading": "Organization",
+                  "changes": [
+                    "Cleaned up unused variables",
+                    "Cleaned up inheritance structure from parent variables",
+                    "Added dev log repository system"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": [
+                    "Added draw_hitbox debug function"
+                  ]
+                },
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": []
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": []
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": [
+                    "Fixed Hoverbot not properly detecting wall collisions"
+                  ]
+                },
+                {
+                  "heading": "Environment",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Weapons",
+                  "changes": []
+                },
+                {
+                  "heading": "Items",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": [
+                    "Reviewed enemy behavior systems"
+                  ]
+                },
+                {
+                  "heading": "Hoverbot",
+                  "changes": [
+                    "Checked Hoverbot behavior during testing"
+                  ]
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Tiles",
+                  "changes": [
+                    "Started replacing tile system (WhiteHex)",
+                    "Continued replacing tile system",
+                    "Completed world map tile system",
+                    "Expanded world map",
+                    "Implemented tile system",
+                    "Fixed tile-related issues",
+                    "Finalized world tile fixes"
+                  ]
+                },
+                {
+                  "heading": "Structures",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": []
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                },
+                {
+                  "heading": "Traps",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "WhiteHex Library",
+      "classList": [
+        "project-info"
+      ],
+      "sections": [
+        {
+          "id": "commentary",
+          "classList": [
+            "commentary"
+          ],
+          "heading": "Commentary",
+          "text": []
+        },
+        {
+          "id": "images",
+          "classList": [
+            "images"
+          ],
+          "heading": "Images",
+          "entries": null
+        },
+        {
+          "id": "changes",
+          "classList": [
+            "changes"
+          ],
+          "heading": "Changes",
+          "sections": [
+            {
+              "heading": "Game Logic",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Input",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": []
+                },
+                {
+                  "heading": "Text",
+                  "changes": []
+                },
+                {
+                  "heading": "Graphics",
+                  "changes": []
+                },
+                {
+                  "heading": "UI",
+                  "changes": []
+                },
+                {
+                  "heading": "Organization",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Graphics",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Color Palette",
+                  "changes": []
+                },
+                {
+                  "heading": "Resolution",
+                  "changes": []
+                },
+                {
+                  "heading": "Frame Rate",
+                  "changes": []
+                },
+                {
+                  "heading": "Player",
+                  "changes": []
+                },
+                {
+                  "heading": "Enemy",
+                  "changes": []
+                },
+                {
+                  "heading": "Environment",
+                  "changes": [
+                    "Tile system replacement work (WhiteHex)"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Player",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Weapons",
+                  "changes": []
+                },
+                {
+                  "heading": "Items",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactions",
+                  "changes": []
+                },
+                {
+                  "heading": "Movement",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Enemies",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Hoverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Rollerbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Moverbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Laserbot",
+                  "changes": []
+                },
+                {
+                  "heading": "Evilbot",
+                  "changes": []
+                }
+              ]
+            },
+            {
+              "heading": "Environment",
+              "sections": [
+                {
+                  "heading": "General",
+                  "changes": []
+                },
+                {
+                  "heading": "Tiles",
+                  "changes": [
+                    "Replaced tile system (WhiteHex)",
+                    "Worked on tile system replacement and integration"
+                  ]
+                },
+                {
+                  "heading": "Structures",
+                  "changes": []
+                },
+                {
+                  "heading": "Interactable",
+                  "changes": []
+                },
+                {
+                  "heading": "Decoration",
+                  "changes": []
+                },
+                {
+                  "heading": "Traps",
+                  "changes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/png" href="image/meat-monochrome-favicon.ico">
     <title>MOPTEC - PORTFOLIO</title>
@@ -49,8 +51,8 @@
             <p><strong>Made With:</strong> HTML, CSS, JavaScript, PHP, SQL, JSON</p>
             <h3>Customer</h3>
             <p>
-                Corpus Christi Catholic Church is located in <a
-                    href="https://en.wikipedia.org/wiki/Savannah,_Georgia" target="_blank">Savannah, Georgia</a>. In 2022, the parish
+                Corpus Christi Catholic Church is located in <a href="https://en.wikipedia.org/wiki/Savannah,_Georgia"
+                    target="_blank">Savannah, Georgia</a>. In 2022, the parish
                 welcomed a new pastor. I introduced myself to him on his first day and proposed creating a website for
                 the parish. He mentioned that a website is often the first interaction people have with a church and
                 accepted my offer. I began as a volunteer and that eventually changed to a paid position to maintain and
@@ -58,12 +60,33 @@
             </p>
             <h3>Development</h3>
             <p>
-                The website has gone through two major revisions after its initial creation, with the second nearly
-                complete. Both share the same general layout but differ in style. The original design used a traditional tan
-                aesthetic, while the first revision used a cleaner, modern look in blue and white. The site includes a
-                password-protected admin page where staff can log in and manage text and image content, which is then
-                displayed across the site wherever it's needed.
+                The website has gone through two major revisions since its initial creation. Both revisions share the
+                same general layout but mostly differ in style. The original design used a traditional tan aesthetic,
+                while the first revision used a cleaner, modern look in blue and white. The biggest design changes
+                involve the layout of the home page.
+                Church staff members can upload images of various aspect ratios or text of various lengths and the
+                design needs to account for this.
             </p>
+            <p>
+                The first revision added this functionality but due to how I designed it, it would cause some sections
+                to expand awkwardly. The second and current revision fixes this in a number of ways. First, all content
+                is stacked in one column instead of two. Secondly, the notices are placed in a horizontal carousel that
+                can be clicked through by the user. All content is now shrunk to be the same height allowing any
+                horizontal overflow to be handled by shifting the next notice image to the right. This was a better
+                solution than possibly imposing arbitrary aspect ratio limits for the various creators of notices.
+            </p>
+            <h3>Features</h3>
+            <ul>
+                <li>Staff Authentication - Secure login system with username and password for authorized church staff
+                    members</li>
+                <li>Hashed Credentials - Passwords are hashed and stored securely on the server.</li>
+                <li>Image Uploads - Staff can upload images of allowed size and file types directly through the admin
+                    page interface.</li>
+                <li>Post Management - Full create, edit, and delete functionality for image and text posts.</li>
+                <li>Decoupled Architecture - The front-end site does not read post content directly from the server. PHP
+                    files
+                    generate a JSON file that the static site generates page content from.</li>
+            </ul>
         </section>
     </main>
     <footer>

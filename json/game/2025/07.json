@@ -1,0 +1,361 @@
+{
+    "year": "2025",
+    "month": "July",
+    "heading": "Development Summary",
+    "projects_included": [
+        "Revenge of the PETSCII Robots",
+        "BOW > VOID > STERN"
+    ],
+    "projects": [
+        {
+            "heading": "Revenge of the PETSCII Robots",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": []
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Weapons",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": [
+                                        "Refined Rollerbot design to match the design created by the cover artist."
+                                    ]
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Tiles",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "BOW > VOID > STERN",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": []
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Weapons",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Tiles",
+                                    "changes": [
+                                        "Created wall objects loop matching intended wall tiles"
+                                    ]
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": [
+                                        "Refined wall objects loop"
+                                    ]
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
