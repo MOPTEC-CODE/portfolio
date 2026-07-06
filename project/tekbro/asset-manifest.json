@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project/tekbro/static/css/main.42c47d7f.css",
-    "main.js": "/project/tekbro/static/js/main.e006a076.js",
+    "main.css": "/project/tekbro/static/css/main.4af1e9c0.css",
+    "main.js": "/project/tekbro/static/js/main.a826ac47.js",
     "static/media/NavineDemo-SemiCondensed.ttf": "/project/tekbro/static/media/NavineDemo-SemiCondensed.4637b5a35051f1dbc5eb.ttf",
     "static/media/NavineDemo-SemiCondensed Italic.ttf": "/project/tekbro/static/media/NavineDemo-SemiCondensed Italic.1dd07aba16532c3dbf0b.ttf",
     "index.html": "/project/tekbro/index.html",
-    "main.42c47d7f.css.map": "/project/tekbro/static/css/main.42c47d7f.css.map",
-    "main.e006a076.js.map": "/project/tekbro/static/js/main.e006a076.js.map"
+    "main.4af1e9c0.css.map": "/project/tekbro/static/css/main.4af1e9c0.css.map",
+    "main.a826ac47.js.map": "/project/tekbro/static/js/main.a826ac47.js.map"
   },
   "entrypoints": [
-    "static/css/main.42c47d7f.css",
-    "static/js/main.e006a076.js"
+    "static/css/main.4af1e9c0.css",
+    "static/js/main.a826ac47.js"
   ]
 }
