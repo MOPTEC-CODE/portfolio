@@ -1,6 +1,6 @@
 {
     "year": "2026",
-    "month": "May",
+    "month": "June",
     "heading": "Development Summary",
     "projects_included": [
         "Revenge of the PETSCII Robots"
@@ -19,7 +19,7 @@
                     ],
                     "heading": "Commentary",
                     "text": [
-                        "May was a lot of code rewrites. It's coming together. Pathfinding is still a headache but it is finally useable again. That the most important update for this month. I would like to not rely on GameMaker's built-in pathfinding functions and make my own some day, even if it's not as good, just so I can have total control over what's going on. Half of the fight here is not knowing exactly what's happening under the hood and the other half is trying to force the instances into cardinal direction movement."
+                        "The most significant change this month was organizing most data attached to an object into a mostly reusable struct and passing this struct into a function. It's probably overkill but it ended up saving a lot of time. The struct isn't that big anyway. I'm not actually sure what I'm worried about. This caused a cascade of errors due to references to a lot of variables no longer existing but nothing really related to logic so it was a lot of simple fixes."
                     ]
                 },
                 {
@@ -30,8 +30,8 @@
                     "heading": "Images",
                     "entries": [
                         {
-                            "path": "./image/log/2026/05/00.png",
-                            "label": "This is actually from the month before. I was testing pathfinding here. The Moverbot would approach the player and smash any boxes in front of him since pushing plus pathfinding never worked together."
+                            "path": "./image/log/2026/06/00.png",
+                            "label": "I do not have any current screenshots from this month but this is one of the oldest screenshots of the game. This one dates to July 2022, back when all of the art (except the grass?) was straight from the Amiga version."
                         }
                     ]
                 },
@@ -47,24 +47,23 @@
                             "sections": [
                                 {
                                     "heading": "General",
-                                    "changes": [
-                                        "Added console object with log function for unified debugging output between GML and JavaScript (defunct).",
-                                        "Projectiles improved by taking into account contact with multiple instances at once.",
-                                        "Added room initialization function."
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Input",
                                     "changes": []
                                 },
                                 {
-                                    "heading": "Movement",
+                                    "heading": "Interaction",
                                     "changes": [
-                                        "Worked on pathfinding system issues with many issues encountered but works good enough now.",
-                                        "Created a separate array table to track reserved movement spaces.",
-                                        "Added another custom function to display custom pathfinding grid for debugging.",
-                                        "Added function to remove blocked pathfinding cells (defunct)."
+                                        "Greatly improved push code.",
+                                        "Greatly improved instance target acquisition of other instances accounting for multiple targets within range.",
+                                        "Investigating pathfinding issues."
                                     ]
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Text",
@@ -72,18 +71,23 @@
                                 },
                                 {
                                     "heading": "Graphics",
-                                    "changes": []
+                                    "changes": [
+                                        "Added visual debug features for hitboxes."
+                                    ]
                                 },
                                 {
                                     "heading": "UI",
-                                    "changes": []
+                                    "changes": [
+                                        "Accidently deleted the UI code but I won't restore it (it's old and bad)."
+                                    ]
                                 },
                                 {
                                     "heading": "Organization",
                                     "changes": [
-                                        "Removed deprecated code and comments.",
-                                        "Cleaned up main object structure significantly.",
-                                        "Postponing further refactoring until the enemy contoller object is refactored."
+                                        "Unified inherited HP, speed, and velocity values from parent to descendant objects.",
+                                        "Greatly restructured how data is passed to most functions.",
+                                        "Refactoring code affected by large-scale changes.",
+                                        "Enfunctioned more code from various objects."
                                     ]
                                 }
                             ]
@@ -126,7 +130,9 @@
                             "sections": [
                                 {
                                     "heading": "General",
-                                    "changes": []
+                                    "changes": [
+                                        "Greatly refactored player object."
+                                    ]
                                 },
                                 {
                                     "heading": "Weapons",
@@ -152,29 +158,20 @@
                                 {
                                     "heading": "General",
                                     "changes": [
-                                        "Enemies no longer killing themselves from broken projectile collisions.",
-                                        "Checked enemy what enemies still had missing/broken abilities.",
-                                        "Fixed enemy pathfinding system to a workable state!"
+                                        "Greatly refactored enemy parent object."
                                     ]
                                 },
                                 {
                                     "heading": "Hoverbot",
-                                    "changes": [
-                                        "Re-enabled Hoverbot attack behavior."
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Rollerbot",
-                                    "changes": [
-                                        "Fixed Rollerbot not turning after attacking.",
-                                        "Fixed Rollerbot reaction to being attacked by player."
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Moverbot",
-                                    "changes": [
-                                        "Moverbot behavior is mostly stable."
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Laserbot",
@@ -195,9 +192,7 @@
                                 },
                                 {
                                     "heading": "Tiles",
-                                    "changes": [
-                                        "Enfunctioned and refined tile randomization."
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Structures",

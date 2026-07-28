@@ -1,6 +1,6 @@
 {
     "year": "2026",
-    "month": "May",
+    "month": "July",
     "heading": "Development Summary",
     "projects_included": [
         "Revenge of the PETSCII Robots"
@@ -18,9 +18,7 @@
                         "commentary"
                     ],
                     "heading": "Commentary",
-                    "text": [
-                        "May was a lot of code rewrites. It's coming together. Pathfinding is still a headache but it is finally useable again. That the most important update for this month. I would like to not rely on GameMaker's built-in pathfinding functions and make my own some day, even if it's not as good, just so I can have total control over what's going on. Half of the fight here is not knowing exactly what's happening under the hood and the other half is trying to force the instances into cardinal direction movement."
-                    ]
+                    "text": []
                 },
                 {
                     "id": "images",
@@ -28,12 +26,7 @@
                         "images"
                     ],
                     "heading": "Images",
-                    "entries": [
-                        {
-                            "path": "./image/log/2026/05/00.png",
-                            "label": "This is actually from the month before. I was testing pathfinding here. The Moverbot would approach the player and smash any boxes in front of him since pushing plus pathfinding never worked together."
-                        }
-                    ]
+                    "entries": null
                 },
                 {
                     "id": "changes",
@@ -48,9 +41,8 @@
                                 {
                                     "heading": "General",
                                     "changes": [
-                                        "Added console object with log function for unified debugging output between GML and JavaScript (defunct).",
-                                        "Projectiles improved by taking into account contact with multiple instances at once.",
-                                        "Added room initialization function."
+                                       
+
                                     ]
                                 },
                                 {
@@ -60,10 +52,7 @@
                                 {
                                     "heading": "Movement",
                                     "changes": [
-                                        "Worked on pathfinding system issues with many issues encountered but works good enough now.",
-                                        "Created a separate array table to track reserved movement spaces.",
-                                        "Added another custom function to display custom pathfinding grid for debugging.",
-                                        "Added function to remove blocked pathfinding cells (defunct)."
+                                        
                                     ]
                                 },
                                 {
@@ -81,9 +70,7 @@
                                 {
                                     "heading": "Organization",
                                     "changes": [
-                                        "Removed deprecated code and comments.",
-                                        "Cleaned up main object structure significantly.",
-                                        "Postponing further refactoring until the enemy contoller object is refactored."
+                                        
                                     ]
                                 }
                             ]
@@ -152,28 +139,25 @@
                                 {
                                     "heading": "General",
                                     "changes": [
-                                        "Enemies no longer killing themselves from broken projectile collisions.",
-                                        "Checked enemy what enemies still had missing/broken abilities.",
-                                        "Fixed enemy pathfinding system to a workable state!"
+                                        
                                     ]
                                 },
                                 {
                                     "heading": "Hoverbot",
                                     "changes": [
-                                        "Re-enabled Hoverbot attack behavior."
+                                        
                                     ]
                                 },
                                 {
                                     "heading": "Rollerbot",
                                     "changes": [
-                                        "Fixed Rollerbot not turning after attacking.",
-                                        "Fixed Rollerbot reaction to being attacked by player."
+                                        
                                     ]
                                 },
                                 {
                                     "heading": "Moverbot",
                                     "changes": [
-                                        "Moverbot behavior is mostly stable."
+                                        
                                     ]
                                 },
                                 {
@@ -196,7 +180,7 @@
                                 {
                                     "heading": "Tiles",
                                     "changes": [
-                                        "Enfunctioned and refined tile randomization."
+                                        
                                     ]
                                 },
                                 {
