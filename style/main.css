@@ -314,6 +314,7 @@ span.muted{
 
 .project .figure .displayed-image {
     width: 50%;
+    object-fit: cover;
 }
 
 .project .figure .wrapper {

@@ -3,7 +3,8 @@
     "month": "July",
     "heading": "Development Summary",
     "projects_included": [
-        "Revenge of the PETSCII Robots"
+        "Revenge of the PETSCII Robots",
+        "WhiteHex Library"
     ],
     "projects": [
         {
@@ -18,7 +19,12 @@
                         "commentary"
                     ],
                     "heading": "Commentary",
-                    "text": []
+                    "text": [
+                        "July was mostly visual changes and the related code. It started with the walls which work in a complex way. The walls exist as square instances in the game world that mostly act as bounding boxes. When they spawn, they set the tiles around them to be the visual wall you see in-game and they adjust based on what walls are near them. For example, three wall instances that are placed to form an 'L' shape, know to draw a north-east facing open corner. The old code was very bad and I'm amazed it worked as well as it did. I think I just got lucky that the placement checks worked in the order I left them in.",
+                        "As mentioned last month, I accidently deleted all of the UI code but seeing as I would have to rewrite all of it, I decided not to retrieve a backup of it and just start from scratch. The current look is a placeholder but will generally be laid out as it stands now. I was inspired by the SNES port of <i>Attack of the PETSCII Robots</i>.",
+                        "Layers were simplified. I had multiple layers for various purposes but there were too many. Tiles now exist as a base layer with a wall tile layer above that and then a water layer below. I was confused about how auto-tiling works which was part of the problem of too many layers. Wall instances had their own layer but now they share the same layer with all other instances that are in the game world. This lead to me needing to redo how depth is set for instances and for layers.",
+                        "A lot of time is <i>still</i> being spent cleaning up problems that arose from the restructuring of how data is handled for most instances. I think it was worth it, or will be worth it in the end."
+                    ]
                 },
                 {
                     "id": "images",
@@ -26,7 +32,20 @@
                         "images"
                     ],
                     "heading": "Images",
-                    "entries": null
+                    "entries": [
+                        {
+                            "path": "./image/log/2026/07/00.png",
+                            "label": "Here we can see the placeholder layout for the new UI. The old UI took up a lot of screen space and it began to feel wasted, especially after seeing the SNES port of the first entry. I think I should still include an option for those who want the older style UI. A notable feature missing is the readout on the bottom of the screen."
+                        },
+                        {
+                            "path": "./image/log/2026/07/01.png",
+                            "label": "This is what I saw when I realized I had accidently deleted the old UI code. As you can see, the player is pushed up to the top left to account for how much space the UI took."
+                        },
+                        {
+                            "path": "./image/log/2026/07/02.png",
+                            "label": "This is GameMaker's level editor. I set the contents of a box visually. The items on top of the boxes self-delete when the game starts and give their contents to whatever instance they are contacting. Otherwise, it's not immediately obvious what items are in what boxes without checking the creation code for those boxes."
+                        }
+                    ]
                 },
                 {
                     "id": "changes",
@@ -40,27 +59,28 @@
                             "sections": [
                                 {
                                     "heading": "General",
-                                    "changes": [
-                                       
-
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Input",
                                     "changes": []
                                 },
                                 {
-                                    "heading": "Movement",
-                                    "changes": [
-                                        
-                                    ]
-                                },
-                                {
-                                    "heading": "Text",
+                                    "heading": "Interaction",
                                     "changes": []
                                 },
                                 {
                                     "heading": "Graphics",
+                                    "changes": [
+                                        "Rewrote depth sorting of sprites and layers."
+                                    ]
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
                                     "changes": []
                                 },
                                 {
@@ -70,7 +90,7 @@
                                 {
                                     "heading": "Organization",
                                     "changes": [
-                                        
+                                        "Greatly simplified room layers."
                                     ]
                                 }
                             ]
@@ -105,6 +125,215 @@
                                 {
                                     "heading": "Environment",
                                     "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": [
+                                        "Redesigned UI layout. (Currently placeholder.)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Weapons",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": [
+                                        "Reimplimted dropping deployable items (bombs, emps, and magnets) after large-scale data restructing in the previous months."
+                                    ]
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Bugfix: Enemies were not facing the correct direction when chasing the player with pathfinding. (Diagonals weren't being checked)"
+                                    ]
+                                },
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Tiles",
+                                    "changes": [
+                                        "Combined multiple tile sprites and tileset assets to help facilitate layer simplification and simplified auto-tiling."
+                                    ]
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": [
+                                        "Completely rewrote wall tile drawing function."
+                                    ]
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "WhiteHex Library",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": [
+                        "I am still unsure whether I should write this in Typescript or C#. I was able to move a square around on-screen in an Electron application. I'm thinking I might save myself problems down the line if I use C#. I do not know C# but I am sure I can learn it. Make of that what you will."
+                    ]
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": null
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Got a square moving on-screen in a standalone Electron executable.",
+                                        "Set up C# on development PC"
+                                    ]
+                                },
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interaction",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": []
                                 }
                             ]
                         },
@@ -138,27 +367,19 @@
                             "sections": [
                                 {
                                     "heading": "General",
-                                    "changes": [
-                                        
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Hoverbot",
-                                    "changes": [
-                                        
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Rollerbot",
-                                    "changes": [
-                                        
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Moverbot",
-                                    "changes": [
-                                        
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Laserbot",
@@ -179,9 +400,7 @@
                                 },
                                 {
                                     "heading": "Tiles",
-                                    "changes": [
-                                        
-                                    ]
+                                    "changes": []
                                 },
                                 {
                                     "heading": "Structures",

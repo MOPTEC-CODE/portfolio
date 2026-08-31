@@ -1,0 +1,250 @@
+{
+    "year": "2026",
+    "month": "July",
+    "heading": "Development Summary",
+    "projects_included": [
+        "Revenge of the PETSCII Robots"
+    ],
+    "projects": [
+        {
+            "heading": "Revenge of the PETSCII Robots",
+            "classList": [
+                "project-info"
+            ],
+            "sections": [
+                {
+                    "id": "commentary",
+                    "classList": [
+                        "commentary"
+                    ],
+                    "heading": "Commentary",
+                    "text": [
+                        "The game is much more playable at this point. As I've said many times, restructuring data the last few months has caused a lot of issues but hopefully saves me time in the future. I'm hoping to be able to reuse some of this code in the future potentially for another game. Maybe. Maybe I can make some kind of survival horror type game. No idea! As for now, and as for <i>Revenge of the PETSCII Robots</i>, the most important parts of the UI works, you can pickup and use weapons and items, use them on enemies, heal yourself, get killed, get chased by the robots with pathfinding, and in-game objects can be broken. That's a pretty big milestone. I'm still working towards vertical slice territory. It's not there yet but I can see it on the horizon.",
+                        "I also made a <a target=\"_blank\" href=\"https://youtu.be/yOaB87L8Geg?si=YWQtT7OJzAia5RSV\">YouTube video</a> going over the development. Please watch it. It's much better than my other content. I'm supposed to lean in to being wacky, as that's closer to how I act in person. I don't know why I got it in my head that I needed to be \"professional\" in these videos.",
+                        "I mentioned in the log that I tried redrawing some tiles. I'm not supposed to work on Sundays but I think creative expressions are fine and since it wasn't on the \"to do\" list, I thought I'd mess with it. I want the planet to look more alien and less Earth-like. Vic is wearing a space suit afterall."
+                    ]
+                },
+                {
+                    "id": "images",
+                    "classList": [
+                        "images"
+                    ],
+                    "heading": "Images",
+                    "entries": [
+                        {
+                            "path": "./image/log/2026/08/00.jpg",
+                            "label": "Here you can see dead robots and a broken box. The player's bullets fly over the heads of the robots, not making contact with them. Earlier, this worked by checking if the dead robot had a value for a \"passthrough\" ability but this made my certain way of pathfinding not work anymore. Now dead robots and broken in-game objects are replaced with \"trash\" instances that just look like the broken/dead version of them."
+                        },
+                                                {
+                            "path": "./image/log/2026/08/01.png",
+                            "label": "One possible look for the game. Red dirt. It's not Mars, but dirt comes in many colors. It looks plain because there are no variations yet in pattern or things like rocks or grass. It might be too dark too. One more brightness notch up the palette!<br><br><i>“To those at the great house it means nothing, this handful of [MARS], but to me it means how much!</i>"
+                        },
+                        
+                        {
+                            "path": "./image/log/2026/08/02.png",
+                            "label": "I'm real proud and ashamed of this Moverbot taking a selfie with his weirdly giant butt showing nonchalantly in the mirror behind him. This is a redraw of a Jerma985 meme where he acts like nothing is different but he's got like a pillow shoved in his pants. If you're going to try to do clickbait, at least make it worth it. It's honest clickbait, really."
+                        }
+                    ]
+                },
+                {
+                    "id": "changes",
+                    "classList": [
+                        "changes"
+                    ],
+                    "heading": "Changes",
+                    "sections": [
+                        {
+                            "heading": "Game Logic",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "New Function: assert",
+                                        "Rewrote how in-game objects and enemies are destroyed. When they are destroyed, they are replaced by a \"trash\" instance. This was necessary for pathfinding reasons.",
+                                        "Bugfix: Fixed explosion damage because some instances would not be damaged -> implemented multiple collision function per explosion"
+                                    ]
+                                },
+                                {
+                                    "heading": "Input",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interaction",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Graphics",
+                                    "changes": [
+                                        "New Function: Manual animation to avoid always having to use image_index to track frames."
+                                    ]
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Text",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": [
+                                        "New Function: Center a sprite within an area",
+                                        "Added dots to display which weapon or item is currently selected, and what has already been acquired."
+                                    ]
+                                },
+                                {
+                                    "heading": "Organization",
+                                    "changes": [
+                                        "Rewrote inventory to include items and weapons to better unify data.",
+                                        "Denested and/or removed some unnecessary functions to reduce code complexity."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Graphics",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Color Palette",
+                                    "changes": [
+                                        "Experimented with a 256 color palette similar to the palette in <i>Ultima VI: The False Prophet</i>."
+                                    ]
+                                },
+                                {
+                                    "heading": "Resolution",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Frame Rate",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Player",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Enemy",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Environment",
+                                    "changes": [
+                                        "New Tiles: Experimented with making the game world look more alien."
+                                    ]
+                                },
+                                {
+                                    "heading": "UI",
+                                    "changes": [
+                                        "New Sprite: unarmed UI",
+                                        "UI now displays stock numbers of items and ammo"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Player",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Reimplimented player death when HP reaches 0."
+                                    ]
+                                },
+                                {
+                                    "heading": "Weapons",
+                                    "changes": [
+                                        "Bugfix: Reimplemented ability for player to shoot -> broken from earlier data restructuring.",
+                                        "Bugfix: Reimplemented directional aiming/shooting."
+                                    ]
+                                },
+                                {
+                                    "heading": "Items",
+                                    "changes": [
+                                        "Bugfix: Reimplemented all deployables. -> Broken from earlier data restructuring."
+                                    ]
+                                },
+                                {
+                                    "heading": "Interactions",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Movement",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Enemies",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": [
+                                        "Bugfix: Reimplimented enemy death. -> Incorrect values were passed."
+                                    ]
+                                },
+                                {
+                                    "heading": "Hoverbot",
+                                    "changes": [
+                                        "Testing: Combat with hoverbot. -> Mostly works except for an issue with diagonal attacks."
+                                    ]
+                                },
+                                {
+                                    "heading": "Rollerbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Moverbot",
+                                    "changes": [
+                                        "Bugfix: Moverbot can now destroy in-game objects and keep moving with pathfinding when chasing. -> Created trash instance to replace destroyed instances with new instances."
+                                    ]
+                                },
+                                {
+                                    "heading": "Laserbot",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Evilbot",
+                                    "changes": []
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Environment",
+                            "sections": [
+                                {
+                                    "heading": "General",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Tiles",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Structures",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Interactable",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Decoration",
+                                    "changes": []
+                                },
+                                {
+                                    "heading": "Traps",
+                                    "changes": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
