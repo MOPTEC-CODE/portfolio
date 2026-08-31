@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- JS -->
+    <script src="./script/portable.js" defer></script>
+    <!-- <script src="./script/screenshotArea.js" defer></script> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="image/meat-monochrome-favicon.ico">
+    <title>MOPTEC - PORTFOLIO</title>
+    <meta name="description" content="MOPTEC | Web Developer | Game Developer">
+    <meta name="author" content="MOPSPEAR">
+</head>
+
+<body class="flex-row">
+    <header class="header box flex-col">
+        <div class="logo wrapper flex-col">
+            <img src="./image/logo.png">
+        </div>
+        <nav class="site-nav flex-col">
+            <a href="./index.html" class="custom-button">PORTFOLIO</a>
+            <a href="./about.html" class="custom-button">DEVELOPER</a>
+            <a href="./contact.html" class="custom-button">CONTACT</a>
+            <a href="./devlog.html" class="custom-button">DEVLOG</a>
+            <a class="custom-button disabled">ART</a>
+        </nav>
+    </header>
+    <main class="main flex-col">
+        <h1>WEB PROJECT</h1>
+
+        <section class="box prose">
+            <h2>Where Are The Seams?</h2>
+
+            <p><strong class="project-link">Project Link:</strong> <a href="https://moptec.net/project/seams/index.html" target="_blank">Where Are
+                    The Seams?</a>
+            <p><strong>Made With:</strong> React, Vite, Javascript, HTML, CSS, (TypeScript)</p>
+            <h3>Description</h3>
+            <p>
+                <i>Where Are The Seams?</i> provides visual information for what developers worked on what games. As it
+                currently stands, the project displays the most important developers who worked on the first six
+                <i>Final Fantasy</i> games. By selecting one of the six titles, you can see a visual representation of
+                which games each person worked on and what their role was. My intent is to help players understand why
+                one game might feel different than another by showing this information. For example, a sudden shift in
+                tone might be due to a different person working as director or scenario writer.
+            </p>
+            <p>This project is still a work in progress.</p>
+            <h3>Development</h3>
+            <p>
+                The project was originally written in TypeScript and React. Learning both at the same time was a
+                mistake, like learning to drive <i>and</i> learning to drive a car with a manual transmission at the
+                same time. I have never done anything quite like this project and I was being slowed down trying to
+                rough
+                everything out by always needing to assign types. I <i>did</i> end up learning TypeScript from this
+                project
+                though. I also learned the importance of forcing types in other projects (GameMaker) after I better understood the
+                intent of TypeScript. I plan to use TypeScript in future projects and perhaps re-add it to this project.
+            </p>
+            <h3>Features</h3>
+            <ul>
+                <li>Uses React states and hooks.</li>
+                <li>Separate pre-computed data layers to reduce complexity and increase speed (likely negligibly).</li>
+                <li>When a game is chosen, hand-selected developers and what games they worked on and their role are displayed.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
