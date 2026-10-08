@@ -1,0 +1,467 @@
+{
+    "backlog": {
+        "console_company": [
+            {
+                "companyName": "Nintendo",
+                "consoles": [
+                    {
+                        "console_name": "Nintendo Entertainment System",
+                        "games": [
+                            {
+                                "slug": "super-mario-bros-3",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": "I will replay this and re-judge it without warps."
+                            },
+                            {
+                                "slug": "metroid",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "With a romhack to set Samus's energy to 99 on start, this game gets five stars."
+                            }
+                        ]
+                    },
+                    {
+                        "console_name": "Wii",
+                        "games": [
+                            {
+                                "slug": "metroid-prime-3-corruption",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": "The Prime series gets steadily worse for each entry."
+                            },
+                            {
+                                "slug": "red-steel",
+                                "status": "beaten",
+                                "rating": 2,
+                                "comment": "I can't believe I hyped up this game to my friends in high school."
+                            },
+                            {
+                                "slug": "resident-evil-4-wii-edition",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            }
+                        ]
+                    },
+                    {
+                        "console_name": "Nintendo Switch",
+                        "games": [
+                            {
+                                "slug": "final-fantasy-iii-pixel-remaster",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": "This version is probably the best way to play it but it's just too frustrating sometimes. Also the judder is bad during movement."
+                            },
+                            {
+                                "slug": "the-legend-of-zelda-breath-of-the-wild",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "It's very close to a five stars from me, but something was missing. Maybe I did not like the final boss and it left a bad taste in my mouth."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "companyName": "Sony",
+                "consoles": [
+                    {
+                        "console_name": "PlayStation",
+                        "logo": "playstation.png",
+                        "games": [
+                            {
+                                "slug": "spyro-the-dragon",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": "I have started this game so many times."
+                            },
+                            {
+                                "slug": "silent-bomber",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": "This has been on my backlog since the year it came out."
+                            }
+                        ]
+                    },
+                    {
+                        "console_name": "PlayStation 4",
+                        "games": [
+                            {
+                                "slug": "death-stranding",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "I genuinely love delivering packages."
+                            }
+                        ]
+                    },
+                    {
+                        "console_name": "PlayStation 5",
+                        "games": [
+                            {
+                                "slug": "destroy-all-humans",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "final-fantasy-iv-pixel-remaster",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "red-dead-redemption-2",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "final-fantasy-vii-remake-intergrade",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": "The slight changes to combat make this superior to the original Remake version."
+                            },
+                            {
+                                "slug": "final-fantasy-vii-rebirth",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "final-fantasy-xvi",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "It hurts to give it a 4. Good game, bad Final Fantasy."
+                            },
+                            {
+                                "slug": "resident-evil-5",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "resident-evil-6",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "companyName": "PC",
+                "consoles": [
+                    {
+                        "console_name": "PC",
+                        "games": [
+                            {
+                                "slug": "call-of-duty-modern-warfare-2",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "call-of-duty-world-at-war",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "A much better game than MW1 and MW2."
+                            },
+                            {
+                                "slug": "call-of-duty-4-modern-warfare",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "crysis-2",
+                                "status": "beaten",
+                                "rating": 2,
+                                "comment": "I thought that if I kept pushing through, the game would get better, but it just got worse. We sacrificed this game to the 360 and PS3."
+                            },
+                            {
+                                "slug": "devil-may-cry-5",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "dishonored",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "doom-doom-ii",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": "These games really do hold up "
+                            },
+                            {
+                                "slug": "doom-eternal",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "dyson-sphere-program",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "the-elder-scrolls-iii-morrowind",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "the-elder-scrolls-v-skyrim",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "fallout-new-vegas",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "half-life-2",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "halls-of-torment",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "halo-reach",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "hexen-beyond-heretic",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "hexen-ii",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "kingdom-come-deliverance",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "medal-of-honor-airborne",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "metal-gear-rising-revengeance",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "metro-last-light-redux",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "metro-2033",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "mirrors-edge",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "path-of-exile",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": "I beat Act 5. I'm not doing the rest of the game."
+                            },
+                            {
+                                "slug": "pizza-tower",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "portal-2",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "predynastic-egypt",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "quake",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "quake-ii",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "resident-evil-2-remake",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "resident-evil-3-remake",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "resident-evil-4-remake",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "resident-evil-7-biohazard",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "riven",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "rock-of-ages",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "rock-of-ages-ii-bigger-boulder",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "sonic-mania",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "spore",
+                                "status": "beaten",
+                                "rating": 2,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "stardew-valley",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "warhammer-40000-boltgun",
+                                "status": "beaten",
+                                "rating": 5,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "warhammer-40000-space-marine",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "warhammer-40000-space-marine-2",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "doom-the-dark-ages",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "cyberpunk-2077",
+                                "status": "unfinished",
+                                "rating": -1,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "wolfenstein-the-new-order",
+                                "status": "beaten",
+                                "rating": 4,
+                                "comment": ""
+                            },
+                            {
+                                "slug": "wolfenstein-the-old-blood",
+                                "status": "beaten",
+                                "rating": 3,
+                                "comment": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "notable_achievements": [
+        {
+            "slug": "final-fantasy-x",
+            "list": [
+                {
+                    "id": 0,
+                    "text": "Acquired the Sun Sigil by beating the Catcher Chocobo race in under 0 seconds."
+                },
+                {
+                    "id": 1,
+                    "text": "Acquired the rare summons: Anima, the Magus Sisters, and Yojimbo."
+                }
+            ],
+            "comment": "I have only gotten a 💢 on my forehead three times in my life, and Tidus's chocobo race was one of those times."
+        },
+        {
+            "slug": "total-war-warhammer",
+            "list": [
+                {
+                    "id": 2,
+                    "text": "Campaigns completed on normal difficulty: Khazrak One-Eye, Thorgrim Grudgebearer, Emperor Karl Franz, Drazhoath the Ashen, Settra the Imperishable"
+                }
+            ],
+            "comment": "Completing these campaigns took many attempts so each one that I finished feels like an accomplishement."
+        }
+    ]
+}
