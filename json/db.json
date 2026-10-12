@@ -1,0 +1,548 @@
+{
+  "games": [
+    {
+      "slug": "super-mario-bros-3",
+      "displayName": "Super Mario Bros. 3",
+      "platform": "NES",
+      "releaseYear": "1988",
+      "developer": "Nintendo R&D4",
+      "publisher": "Nintendo"
+    },
+    {
+      "slug": "metroid",
+      "displayName": "Metroid",
+      "platform": "NES",
+      "releaseYear": "1986",
+      "developer": "Nintendo R&D1, Intelligent Systems",
+      "publisher": "Nintendo"
+    },
+    {
+      "slug": "spyro-the-dragon",
+      "displayName": "Spyro the Dragon",
+      "platform": "PS1",
+      "releaseYear": "1998",
+      "developer": "Insomniac Games",
+      "publisher": "Sony Computer Entertainment"
+    },
+    {
+      "slug": "silent-bomber",
+      "displayName": "Silent Bomber",
+      "platform": "PS1",
+      "releaseYear": "1999",
+      "developer": "CyberConnect",
+      "publisher": "Bandai"
+    },
+    {
+      "slug": "total-war-warhammer",
+      "displayName": "Total War: Warhammer",
+      "platform": "PC",
+      "releaseYear": "2016",
+      "developer": "Creative Assembly",
+      "publisher": "Sega"
+    },
+    {
+      "slug": "final-fantasy-x",
+      "displayName": "Final Fantasy X",
+      "platform": "PS2",
+      "releaseYear": "2001",
+      "developer": "Square Product Development Division 1",
+      "publisher": "Square"
+    },
+    {
+      "slug": "metroid-prime-3-corruption",
+      "displayName": "Metroid Prime 3: Corruption",
+      "platform": "Wii",
+      "releaseYear": "2007",
+      "developer": "Retro Studios",
+      "publisher": "Nintendo"
+    },
+    {
+      "slug": "red-steel",
+      "displayName": "Red Steel",
+      "platform": "Wii",
+      "releaseYear": "2006",
+      "developer": "Ubisoft Paris",
+      "publisher": "Ubisoft"
+    },
+    {
+      "slug": "resident-evil-4-wii-edition",
+      "displayName": "Resident Evil 4: Wii Edition",
+      "platform": "Wii",
+      "releaseYear": "2007",
+      "developer": "Capcom Production Studio 4",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "final-fantasy-iii-pixel-remaster",
+      "displayName": "Final Fantasy III Pixel Remaster",
+      "platform": "Nintendo Switch",
+      "releaseYear": "2021",
+      "developer": "Square Enix",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "the-legend-of-zelda-breath-of-the-wild",
+      "displayName": "The Legend of Zelda: Breath of the Wild",
+      "platform": "Nintendo Switch",
+      "releaseYear": "2017",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "slug": "death-stranding",
+      "displayName": "Death Stranding",
+      "platform": "PS4",
+      "releaseYear": "2019",
+      "developer": "Kojima Productions",
+      "publisher": "Sony Interactive Entertainment"
+    },
+    {
+      "slug": "destroy-all-humans",
+      "displayName": "Destroy All Humans!",
+      "platform": "PS5",
+      "releaseYear": "2020",
+      "developer": "Black Forest Games",
+      "publisher": "THQ Nordic"
+    },
+    {
+      "slug": "final-fantasy-iv-pixel-remaster",
+      "displayName": "Final Fantasy IV Pixel Remaster",
+      "platform": "PS5",
+      "releaseYear": "2021",
+      "developer": "Square Enix",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "final-fantasy-xii-the-zodiac-age",
+      "displayName": "Final Fantasy XII: The Zodiac Age",
+      "platform": "PS5",
+      "releaseYear": "2017",
+      "developer": "Square Enix",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "red-dead-redemption-2",
+      "displayName": "Red Dead Redemption 2",
+      "platform": "PS5",
+      "releaseYear": "2018",
+      "developer": "Rockstar Studios",
+      "publisher": "Rockstar Games"
+    },
+    {
+      "slug": "final-fantasy-vii-remake-intergrade",
+      "displayName": "Final Fantasy VII Remake Intergrade",
+      "platform": "PS5",
+      "releaseYear": "2021",
+      "developer": "Square Enix",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "final-fantasy-vii-rebirth",
+      "displayName": "Final Fantasy VII Rebirth",
+      "platform": "PS5",
+      "releaseYear": "2024",
+      "developer": "Square Enix",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "final-fantasy-xvi",
+      "displayName": "Final Fantasy XVI",
+      "platform": "PS5",
+      "releaseYear": "2023",
+      "developer": "Creative Business Unit III",
+      "publisher": "Square Enix"
+    },
+    {
+      "slug": "resident-evil-5",
+      "displayName": "Resident Evil 5",
+      "platform": "PS5",
+      "releaseYear": "2009",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "resident-evil-6",
+      "displayName": "Resident Evil 6",
+      "platform": "PS5",
+      "releaseYear": "2012",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "battlefield-bad-company-2",
+      "displayName": "Battlefield: Bad Company 2",
+      "platform": "PC",
+      "releaseYear": "2010",
+      "developer": "EA DICE",
+      "publisher": "Electronic Arts"
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-2",
+      "displayName": "Call of Duty: Modern Warfare 2",
+      "platform": "PC",
+      "releaseYear": "2009",
+      "developer": "Infinity Ward",
+      "publisher": "Activision"
+    },
+    {
+      "slug": "call-of-duty-world-at-war",
+      "displayName": "Call of Duty: World at War",
+      "platform": "PC",
+      "releaseYear": "2008",
+      "developer": "Treyarch",
+      "publisher": "Activision"
+    },
+    {
+      "slug": "call-of-duty-4-modern-warfare",
+      "displayName": "Call of Duty 4: Modern Warfare",
+      "platform": "PC",
+      "releaseYear": "2007",
+      "developer": "Infinity Ward",
+      "publisher": "Activision"
+    },
+    {
+      "slug": "crysis-2",
+      "displayName": "Crysis 2",
+      "platform": "PC",
+      "releaseYear": "2011",
+      "developer": "Crytek",
+      "publisher": "Electronic Arts"
+    },
+    {
+      "slug": "devil-may-cry-5",
+      "displayName": "Devil May Cry 5",
+      "platform": "PC",
+      "releaseYear": "2019",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "dishonored",
+      "displayName": "Dishonored",
+      "platform": "PC",
+      "releaseYear": "2012",
+      "developer": "Arkane Studios",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "doom-doom-ii",
+      "displayName": "DOOM + DOOM II",
+      "platform": "PC",
+      "releaseYear": "2024",
+      "developer": "id Software, Nightdive Studios",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "doom-eternal",
+      "displayName": "Doom Eternal",
+      "platform": "PC",
+      "releaseYear": "2020",
+      "developer": "id Software",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "dyson-sphere-program",
+      "displayName": "Dyson Sphere Program",
+      "platform": "PC",
+      "releaseYear": "2021",
+      "developer": "Youthcat Studio",
+      "publisher": "Gamera Games"
+    },
+    {
+      "slug": "the-elder-scrolls-iii-morrowind",
+      "displayName": "The Elder Scrolls III: Morrowind",
+      "platform": "PC",
+      "releaseYear": "2002",
+      "developer": "Bethesda Game Studios",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "the-elder-scrolls-v-skyrim",
+      "displayName": "The Elder Scrolls V: Skyrim",
+      "platform": "PC",
+      "releaseYear": "2011",
+      "developer": "Bethesda Game Studios",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "fallout-new-vegas",
+      "displayName": "Fallout: New Vegas",
+      "platform": "PC",
+      "releaseYear": "2010",
+      "developer": "Obsidian Entertainment",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "half-life-2",
+      "displayName": "Half-Life 2",
+      "platform": "PC",
+      "releaseYear": "2004",
+      "developer": "Valve",
+      "publisher": "Valve"
+    },
+    {
+      "slug": "halls-of-torment",
+      "displayName": "Halls of Torment",
+      "platform": "PC",
+      "releaseYear": "2023",
+      "developer": "Chasing Carrots",
+      "publisher": "Chasing Carrots"
+    },
+    {
+      "slug": "halo-reach",
+      "displayName": "Halo: Reach",
+      "platform": "PC",
+      "releaseYear": "2010",
+      "developer": "Bungie",
+      "publisher": "Microsoft Game Studios"
+    },
+    {
+      "slug": "hexen-beyond-heretic",
+      "displayName": "Hexen: Beyond Heretic",
+      "platform": "PC",
+      "releaseYear": "1995",
+      "developer": "Raven Software",
+      "publisher": "id Software"
+    },
+    {
+      "slug": "hexen-ii",
+      "displayName": "Hexen II",
+      "platform": "PC",
+      "releaseYear": "1997",
+      "developer": "Raven Software",
+      "publisher": "id Software"
+    },
+    {
+      "slug": "kingdom-come-deliverance",
+      "displayName": "Kingdom Come: Deliverance",
+      "platform": "PC",
+      "releaseYear": "2018",
+      "developer": "Warhorse Studios",
+      "publisher": "Deep Silver"
+    },
+    {
+      "slug": "medal-of-honor-airborne",
+      "displayName": "Medal of Honor: Airborne",
+      "platform": "PC",
+      "releaseYear": "2007",
+      "developer": "EA Los Angeles",
+      "publisher": "Electronic Arts"
+    },
+    {
+      "slug": "metal-gear-rising-revengeance",
+      "displayName": "Metal Gear Rising: Revengeance",
+      "platform": "PC",
+      "releaseYear": "2013",
+      "developer": "PlatinumGames",
+      "publisher": "Konami"
+    },
+    {
+      "slug": "metro-last-light-redux",
+      "displayName": "Metro: Last Light Redux",
+      "platform": "PC",
+      "releaseYear": "2014",
+      "developer": "4A Games",
+      "publisher": "Deep Silver"
+    },
+    {
+      "slug": "metro-2033",
+      "displayName": "Metro 2033",
+      "platform": "PC",
+      "releaseYear": "2010",
+      "developer": "4A Games",
+      "publisher": "THQ"
+    },
+    {
+      "slug": "mirrors-edge",
+      "displayName": "Mirror's Edge",
+      "platform": "PC",
+      "releaseYear": "2008",
+      "developer": "EA DICE",
+      "publisher": "Electronic Arts"
+    },
+    {
+      "slug": "path-of-exile",
+      "displayName": "Path of Exile",
+      "platform": "PC",
+      "releaseYear": "2013",
+      "developer": "Grinding Gear Games",
+      "publisher": "Grinding Gear Games"
+    },
+    {
+      "slug": "pizza-tower",
+      "displayName": "Pizza Tower",
+      "platform": "PC",
+      "releaseYear": "2023",
+      "developer": "Tour De Pizza",
+      "publisher": "Tour De Pizza"
+    },
+    {
+      "slug": "portal-2",
+      "displayName": "Portal 2",
+      "platform": "PC",
+      "releaseYear": "2011",
+      "developer": "Valve",
+      "publisher": "Valve"
+    },
+    {
+      "slug": "predynastic-egypt",
+      "displayName": "Predynastic Egypt",
+      "platform": "PC",
+      "releaseYear": "2016",
+      "developer": "Clarus Victoria",
+      "publisher": "Clarus Victoria"
+    },
+    {
+      "slug": "quake",
+      "displayName": "Quake",
+      "platform": "PC",
+      "releaseYear": "1996",
+      "developer": "id Software",
+      "publisher": "GT Interactive"
+    },
+    {
+      "slug": "quake-ii",
+      "displayName": "Quake II",
+      "platform": "PC",
+      "releaseYear": "1997",
+      "developer": "id Software",
+      "publisher": "Activision"
+    },
+    {
+      "slug": "resident-evil-2-remake",
+      "displayName": "Resident Evil 2",
+      "platform": "PC",
+      "releaseYear": "2019",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "resident-evil-3-remake",
+      "displayName": "Resident Evil 3",
+      "platform": "PC",
+      "releaseYear": "2020",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "resident-evil-4-remake",
+      "displayName": "Resident Evil 4",
+      "platform": "PC",
+      "releaseYear": "2023",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "resident-evil-7-biohazard",
+      "displayName": "Resident Evil 7: Biohazard",
+      "platform": "PC",
+      "releaseYear": "2017",
+      "developer": "Capcom",
+      "publisher": "Capcom"
+    },
+    {
+      "slug": "riven",
+      "displayName": "Riven",
+      "platform": "PC",
+      "releaseYear": "1997",
+      "developer": "Cyan Worlds",
+      "publisher": "Brøderbund"
+    },
+    {
+      "slug": "rock-of-ages",
+      "displayName": "Rock of Ages",
+      "platform": "PC",
+      "releaseYear": "2011",
+      "developer": "ACE Team",
+      "publisher": "Atlus"
+    },
+    {
+      "slug": "rock-of-ages-ii-bigger-boulder",
+      "displayName": "Rock of Ages II: Bigger & Boulder",
+      "platform": "PC",
+      "releaseYear": "2017",
+      "developer": "ACE Team",
+      "publisher": "Atlus"
+    },
+    {
+      "slug": "sonic-mania",
+      "displayName": "Sonic Mania",
+      "platform": "PC",
+      "releaseYear": "2017",
+      "developer": "PagodaWest Games, Headcannon",
+      "publisher": "Sega"
+    },
+    {
+      "slug": "spore",
+      "displayName": "Spore",
+      "platform": "PC",
+      "releaseYear": "2008",
+      "developer": "Maxis",
+      "publisher": "Electronic Arts"
+    },
+    {
+      "slug": "stardew-valley",
+      "displayName": "Stardew Valley",
+      "platform": "PC",
+      "releaseYear": "2016",
+      "developer": "ConcernedApe",
+      "publisher": "ConcernedApe"
+    },
+    {
+      "slug": "warhammer-40000-boltgun",
+      "displayName": "Warhammer 40,000: Boltgun",
+      "platform": "PC",
+      "releaseYear": "2023",
+      "developer": "Auroch Digital",
+      "publisher": "Focus Entertainment"
+    },
+    {
+      "slug": "warhammer-40000-space-marine",
+      "displayName": "Warhammer 40,000: Space Marine",
+      "platform": "PC",
+      "releaseYear": "2011",
+      "developer": "Relic Entertainment",
+      "publisher": "THQ"
+    },
+    {
+      "slug": "warhammer-40000-space-marine-2",
+      "displayName": "Warhammer 40,000: Space Marine 2",
+      "platform": "PC",
+      "releaseYear": "2024",
+      "developer": "Saber Interactive",
+      "publisher": "Focus Entertainment"
+    },
+    {
+      "slug": "doom-the-dark-ages",
+      "displayName": "Doom: The Dark Ages",
+      "platform": "PC",
+      "releaseYear": "2025",
+      "developer": "id Software",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "cyberpunk-2077",
+      "displayName": "Cyberpunk 2077",
+      "platform": "PC",
+      "releaseYear": "2020",
+      "developer": "CD Projekt Red",
+      "publisher": "CD Projekt"
+    },
+    {
+      "slug": "wolfenstein-the-new-order",
+      "displayName": "Wolfenstein: The New Order",
+      "platform": "PC",
+      "releaseYear": "2014",
+      "developer": "MachineGames",
+      "publisher": "Bethesda Softworks"
+    },
+    {
+      "slug": "wolfenstein-the-old-blood",
+      "displayName": "Wolfenstein: The Old Blood",
+      "platform": "PC",
+      "releaseYear": "2015",
+      "developer": "MachineGames",
+      "publisher": "Bethesda Softworks"
+    }
+  ]
+}
