@@ -126,7 +126,7 @@
                                 "slug": "final-fantasy-vii-rebirth",
                                 "status": "beaten",
                                 "rating": 5,
-                                "comment": ""
+                                "comment": "I often enjoy Final Fantasy games more after replaying them, and it's true for this entry too. My expectations become unrealistic the first time around."
                             },
                             {
                                 "slug": "final-fantasy-xvi",
@@ -137,8 +137,8 @@
                             {
                                 "slug": "resident-evil-5",
                                 "status": "unfinished",
-                                "rating": -1,
-                                "comment": ""
+                                "rating": 3,
+                                "comment": "It could have been much better. It felt like they were rushed or had to change direction mid-development."
                             },
                             {
                                 "slug": "resident-evil-6",
@@ -196,13 +196,13 @@
                                 "slug": "doom-doom-ii",
                                 "status": "beaten",
                                 "rating": 5,
-                                "comment": "These games really do hold up "
+                                "comment": "These games really do hold up."
                             },
                             {
                                 "slug": "doom-eternal",
                                 "status": "beaten",
                                 "rating": 5,
-                                "comment": ""
+                                "comment": "This game was something else. The DLC was far too difficult though but I'm not considering that here."
                             },
                             {
                                 "slug": "dyson-sphere-program",
@@ -232,7 +232,7 @@
                                 "slug": "half-life-2",
                                 "status": "beaten",
                                 "rating": 5,
-                                "comment": ""
+                                "comment": "SOLID."
                             },
                             {
                                 "slug": "halls-of-torment",
@@ -249,7 +249,7 @@
                             {
                                 "slug": "hexen-beyond-heretic",
                                 "status": "beaten",
-                                "rating": 4,
+                                "rating": -1,
                                 "comment": ""
                             },
                             {
@@ -298,7 +298,7 @@
                                 "slug": "path-of-exile",
                                 "status": "beaten",
                                 "rating": 4,
-                                "comment": "I beat Act 5. I'm not doing the rest of the game."
+                                "comment": "I beat Act 5. I'm not doing the rest of the game. This is good enough."
                             },
                             {
                                 "slug": "pizza-tower",
