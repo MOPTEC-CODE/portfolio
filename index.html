@@ -7,6 +7,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <script src="./script/portable.js" defer></script>
+    <script src="./script/render_siteNav.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,16 +22,14 @@
 </head>
 
 <body class="flex-row">
-    <header class="header box flex-col">
-        <div class="logo wrapper flex-col">
+    <header class="box">
+        <!-- Logo -->
+        <div class="logo">
             <img src="./image/logo.png">
         </div>
-        <nav class="site-nav flex-col">
-            <a href="./index.html" class="custom-button">PORTFOLIO</a>
-            <a href="./about.html" class="custom-button">DEVELOPER</a>
-            <a href="./contact.html" class="custom-button">CONTACT</a>
-            <a href="./devlog.html" class="custom-button">DEVLOG</a>
-            <a class="custom-button disabled">ART</a>
+        <!-- Site Navigation -->
+        <nav id="siteNav" class="site-nav">
+            <!-- Filled by render_siteNav.js -->
         </nav>
     </header>
     <footer class="footer">
@@ -37,6 +37,21 @@
     </footer>
     <main class="main flex-col">
         <h1>PORTFOLIO</h1>
+
+        <section class="box prose">
+            <h2 id="bio">
+                BIO<img id="materia" class="easter-egg materia" src="./image/easter_egg/materia-empty.png">
+            </h2>
+
+            <p class="justify">I am a freelance software developer. I specialize in two areas: web development and game
+                development.
+                For websites, I focus on easy to use websites that don't frustrate the user. I avoid
+                over-complicated design and avoid sacrificing usability for the sake of aesthetics. For games, I
+                focus on 2D retro-style graphics and gameplay. I try to balance an authentic retro feel with the
+                realities of modern game development and what a player expects today.</p>
+            <p>I am also known as <strong>mopspear</strong></p>
+
+        </section>
         <section class="box portfolio">
             <h2>
                 Professional Web Projects
@@ -145,7 +160,23 @@
                 </a>
             </div>
         </section>
-
+        <section class="box portfolio">
+            <h2>
+                Certifications
+            </h2>
+            <div class="cards grid">
+                <a href="https://www.freecodecamp.org/certification/nikuwebdeveloper/responsive-web-design"
+                    target="_blank" class="card flex-col">
+                    <div class="wrapper">
+                        <img src="./image/tile/freecodecamp-thumb.jpg">
+                    </div>
+                    <div class="description flex-col">
+                        <p>Freecodecamp</p>
+                        <p class="subtitle">Responsive Web Design</p>
+                    </div>
+                </a>
+            </div>
+        </section>
 
     </main>
 

@@ -9,7 +9,7 @@
     <!-- JS -->
     <script src="./script/portable.js" defer></script>
     <script src="./script/screenshotArea.js" defer></script>
-
+    <script src="./script/render_siteNav.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/responsive.css">
@@ -27,16 +27,14 @@
 </head>
 
 <body class="flex-row">
-    <header class="header box flex-col">
-        <div class="logo wrapper flex-col">
+    <header class="box">
+        <!-- Logo -->
+        <div class="logo">
             <img src="./image/logo.png">
         </div>
-        <nav class="site-nav flex-col">
-            <a href="./index.html" class="custom-button">PORTFOLIO</a>
-            <a href="./about.html" class="custom-button">DEVELOPER</a>
-            <a href="./contact.html" class="custom-button">CONTACT</a>
-            <a href="./devlog.html" class="custom-button">DEVLOG</a>
-            <a class="custom-button disabled">ART</a>
+        <!-- Site Navigation -->
+        <nav id="siteNav" class="site-nav">
+            <!-- Filled by render_siteNav.js -->
         </nav>
     </header>
     <main class="main flex-col">

@@ -337,15 +337,15 @@ span.muted{
     width: 100%;
 }
 
-.header {
+header {
     position: fixed;
-    width: var(--nav-offset);
     height: 100vh;
 }
 
-.header.box {
+header.box {
     border-radius: 0;
     margin-bottom: 0;
+    width: var(--nav-offset);
 }
 
 .main {
@@ -358,10 +358,11 @@ span.muted{
 
 .site-nav {
     width: 75%;
-    margin: 2rem auto 2rem 1.5rem;
+    margin: 6rem auto 2rem 1.5rem;
 }
 
 .site-nav a {
+    display: block;
     padding: 0.5rem 0.75rem;
     flex: 1;
     font-weight: 400;
@@ -391,13 +392,14 @@ span.muted{
 .logo {
     width: 100%;
     margin: 0 auto;
-    aspect-ratio: 4/3;
+    display: flex;
+    padding: 2rem;
 }
 
 .logo>img {
-    width: 75%;
-    margin: auto;
+    width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .nav-footer {
