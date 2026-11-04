@@ -18,11 +18,11 @@ let links = [
         classes: ["custom-button"],
         text: "DEVLOG"
     },
-    {
-        page: "art",
-        classes: ["custom-button", "disabled"],
-        text: "ART"
-    },            
+    // {
+    //     page: "art",
+    //     classes: ["custom-button", "disabled"],
+    //     text: "ART"
+    // },            
 ]
 
 for (let i = 0; i < links.length; i++)

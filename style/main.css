@@ -348,7 +348,7 @@ header.box {
     width: var(--nav-offset);
 }
 
-.main {
+main {
     width: 100%;
     margin-top: 5%;
     margin-right: 10%;
